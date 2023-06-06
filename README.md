@@ -4,7 +4,9 @@ This repo is an attempt to port pmOS to Xiaomi Note 10 Pro, codename `tucana`. N
 
 ## Status
 
-Kernel compiles, but doesn't boot.
+12 branch with gcc and general-regs-only patch: kernel compiles, but doesn't boot.
+
+13 branch with clang: `../kernel/jump_label.c:245:54: error: use of undeclared identifier 'timeout'`
 
 ## Links
 
@@ -45,7 +47,7 @@ https://github.com/erikdrozina/kernel_xiaomi_sm6150/blob/13/arch/arm64/configs/t
 https://github.com/erikdrozina/kernel_xiaomi_sm6150/commits/13
 https://github.com/OctaviOS-Devices/kernel_xiaomi_tucana/tree/12
 
-## Log
+## First steps
 
 I've initialized a new project and followed the "Porting to a new device" page. A working Android 13 ROM named OctaviOS is available for tucana, so both kernel and device tree are ready. I used this [2] defconfig. Initial check:
 
@@ -97,3 +99,29 @@ The boot process fails after 2-3 seconds. Stopping there now to publish prelimin
 [1] https://gitlab.com/etn40ff/pmaports/-/tree/xiaomi-sweet/device/testing/linux-xiaomi-sweet
 [2] https://raw.githubusercontent.com/OctaviOS-Devices/kernel_xiaomi_tucana/12/arch/arm64/configs/tucana_defconfig
 [3] https://gitlab.com/etn40ff/pmaports/-/blob/xiaomi-sweet/device/testing/linux-xiaomi-sweet/fix_compilation.patch
+
+### 13.0 and clang
+
+In erikdrozina/kernel_xiaomi_sm6150 maintainer has switched to clang. Let's try it too since "try another codebase" is a valid strategy. Now it's 4.14.299. The only change in defconfig is CONFIG_CC_STACKPROTECTOR_NONE=y.
+
+The latest run failed with:
+
+```
+../kernel/jump_label.c:242:6: warning: implicit declaration of function 'static_key_slow_try_dec' [-Wimplicit-function-declaration]
+        if (static_key_slow_try_dec(key))
+            ^
+../kernel/jump_label.c:245:48: error: use of undeclared identifier 'work'; did you mean 'for'?
+        queue_delayed_work(system_power_efficient_wq, work, timeout);
+                                                      ^~~~
+                                                      for
+../kernel/jump_label.c:245:48: error: expected expression
+../kernel/jump_label.c:245:54: error: use of undeclared identifier 'timeout'
+        queue_delayed_work(system_power_efficient_wq, work, timeout);
+                                                            ^
+1 warning and 3 errors generated.
+make[2]: *** [../scripts/Makefile.build:364: kernel/jump_label.o] Error 1
+```
+
+It was broken there: https://github.com/erikdrozina/kernel_xiaomi_sm6150/commit/50c395c19174e0bba0cc7ed5d2ddafc08222da3d
+
+Or, disabling CONFIG_JUMP_LABEL=y in defconfig.
