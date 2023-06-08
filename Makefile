@@ -9,5 +9,12 @@ pull:
 	cp ${PMAPORT}/config-xiaomi-tucana.aarch64 configs/current
 	cp ${PMAPORT}/APKBUILD APKBUILD
 
+kconfig:
+	pmbootstrap kconfig edit
+	make pull
+
 build:
-	pmbootstrap build linux-xiaomi-tucana
+	pmbootstrap build linux-xiaomi-tucana --force
+
+boot:
+	pmbootstrap flasher boot
