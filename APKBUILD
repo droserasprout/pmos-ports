@@ -2,7 +2,7 @@
 # Kernel config based on: arch/arm64/configs/tucana_defconfig
 
 pkgname=linux-xiaomi-tucana
-pkgver=4.14.299
+pkgver=4.14.275
 pkgrel=0
 pkgdesc="Xiaomi Note 10 Pro kernel fork"
 arch="aarch64"
@@ -21,25 +21,18 @@ makedepends="
 	linux-headers
 	openssl-dev
 	perl
-	clang
-	llvm
-	lld
-	xz
 "
 
 # Source
-_repository="kernel_xiaomi_sm6150"
-_commit="065292e26b718647b372480204baf9328ba2a72d"
+_repository="kernel_xiaomi_tucana"
+_commit="a0c0618b7864248bd8369bdbb37b04571cf5f0fc"
 _config="config-$_flavor.$arch"
 source="
-	$pkgname-$_commit.tar.gz::https://github.com/erikdrozina/$_repository/archive/$_commit.tar.gz
+	$pkgname-$_commit.tar.gz::https://github.com/OctaviOS-Devices/$_repository/archive/$_commit.tar.gz
 	$_config
 "
 builddir="$srcdir/$_repository-$_commit"
 _outdir="out"
-
-CC="clang"
-HOSTCC="clang"
 
 prepare() {
 	default_prepare
@@ -48,16 +41,7 @@ prepare() {
 
 build() {
 	unset LDFLAGS
-	make O="$_outdir" \
-		ARCH="$_carch" \
-		CC=clang \
-		CROSS_COMPILE=aarch64-alpine-linux-musl- \
-		CROSS_COMPILE_ARM32=armv7-alpine-linux-musleabihf- \
-		NM=llvm-nm \
-		OBJCOPY=llvm-objcopy \
-		OBJDUMP=llvm-objdump \
-		STRIP=llvm-strip \
-		LD=ld.lld \
+	make O="$_outdir" ARCH="$_carch" CC="${CC:-gcc}" \
 		KBUILD_BUILD_VERSION="$((pkgrel + 1 ))-postmarketOS"
 }
 
@@ -67,6 +51,6 @@ package() {
 }
 
 sha512sums="
-b600140857f1cdf83615508f9f65ac97a86b18c314c55b967859ae745f3febf20d59e25499a2facceb54a6bc30b980850424f9fb087fc60697dc9ce132d2a9df  linux-xiaomi-tucana-065292e26b718647b372480204baf9328ba2a72d.tar.gz
-a987a81f11b1d00bad062180aff07ac5c67fb6b77a0f055893d26ce5a8d2d2a66a72bb0c91e2618c5b66011d1e070f8a893632f4be7de893f686bb2c51083b6b  config-xiaomi-tucana.aarch64
+f4dc0bec0dfe9a2d4defb2d2298b0c5756fd22a6f0ab10766840ec3ca1dfbd6b2279ff6d9f8af4553024647e469e766ab174a2b4ecc9c2c6d78b58ca71fd3054  linux-xiaomi-tucana-a0c0618b7864248bd8369bdbb37b04571cf5f0fc.tar.gz
+88dc7ffff07bfd169cea57f57fd7d7efdbe7fe84231f1fa3c11d80728b366334bd1a64143046e6060aa585cde5f373195480e920490673837d25532026cfa463  config-xiaomi-tucana.aarch64
 "
