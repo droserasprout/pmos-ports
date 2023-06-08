@@ -1,53 +1,12 @@
 # PostmarketOS on Xiaomi Note 10 Pro (WIP)
 
-This repo is an attempt to port pmOS to Xiaomi Note 10 Pro, codename `tucana`. Not to be confused with Redmi Note 10 Pro, `sweet`. Almost identical names, and similar looks, but different guts. Also, sweet has a WIP port by Salvatore Stella [1].
+This repo is an attempt to port pmOS to Xiaomi Note 10 Pro, codename `tucana`. Not to be confused with Redmi Note 10 Pro, `sweet`. Almost identical names, and similar looks, but different guts.
 
 ## Status
 
-12 branch with gcc and general-regs-only patch: kernel compiles, but doesn't boot.
+Doesn't boot with any compiled or prebuilt kernel. /sys/fs/pstore is empty from recovery, so I have no idea how to proceed.
 
-13 branch with clang: `../kernel/jump_label.c:245:54: error: use of undeclared identifier 'timeout'`
-
-## Links
-
-ext+treestyletab:group?title=general
-https://www.gsmarena.com/xiaomi_mi_note_10_pro-9945.php
-https://www.giznext.com/mobile-chipsets/qualcomm-snapdragon-730g-chipset-gnt
-https://forum.xda-developers.com/f/xiaomi-mi-note-10-roms-kernels-recoveries-oth.9603/
-https://forum.xda-developers.com/t/recovery-3-4-0-10-tucana-official-unofficial-twrp-xiaomi-mi-note-10-cc9-pro-stable.4015805/
-https://forum.xda-developers.com/t/firmware-xiaomi-mi-note-10-pro-mi-cc-9-pro-tucana-auto-updated-daily.4096347/
-https://forum.xda-developers.com/t/rom-a13-official-octavios.4554983/
-https://sourceforge.net/projects/erikdrozina-builds/
-ext+treestyletab:group?title=sweet+port
-https://wiki.postmarketos.org/index.php?title=Xiaomi_Redmi_Note_10_Pro_(xiaomi-sweet)&mobileaction=toggle_view_desktop
-https://github.com/TeamWin/android_device_xiaomi_sweet
-https://gitlab.com/etn40ff/pmaports/-/tree/xiaomi-sweet/device/testing/linux-xiaomi-sweet
-ext+treestyletab:group?title=wiki
-https://wiki.postmarketos.org/wiki/Kernel_configuration#CONFIG_SWAP
-https://wiki.postmarketos.org/wiki/Downstream_kernel_specific_package#GCC_version
-https://wiki.postmarketos.org/wiki/Porting_to_a_new_device#Find_the_error_message
-https://wiki.postmarketos.org/wiki/Mainlining_FAQ#Writing_dmesg_to_RAM_and_reading_it_out_after_reboot
-https://wiki.postmarketos.org/wiki/Troubleshooting:boot
-ext+treestyletab:group?title=arm+stuff
-https://patchwork.ozlabs.org/project/uboot/patch/20171128020937.27906-1-peng.fan@nxp.com/
-https://www.rowleydownload.co.uk/arm/documentation/gnu/gcc/AArch64-Options.html
-https://bugs.llvm.org/show_bug.cgi?id=30792
-https://reviews.llvm.org/D38479
-https://patchwork.kernel.org/project/linux-kbuild/patch/20171129000011.55235-4-samitolvanen@google.com/
-ext+treestyletab:group?title=kernels
-https://github.com/OctaviOS-Devices/kernel_xiaomi_tucana
-https://raw.githubusercontent.com/OctaviOS-Devices/kernel_xiaomi_tucana/12/arch/arm64/configs/tucana_defconfig
-https://github.com/OctaviOS-Devices/kernel_xiaomi_tucana/blob/12/arch/arm64/configs/vendor/tucana_user_defconfig
-https://raw.githubusercontent.com/OctaviOS-Devices/kernel_xiaomi_tucana/12/arch/arm64/configs/tucana_defconfig
-https://github.com/OctaviOS-Devices/kernel_xiaomi_tucana/blob/12/build.config.aarch64
-https://raw.githubusercontent.com/OctaviOS-Devices/kernel_xiaomi_tucana/12/arch/arm64/configs/vendor/tucana_user_defconfig
-https://github.com/erikdrozina/kernel_xiaomi_sm6150
-https://github.com/erikdrozina/kernel_xiaomi_sm6150/commits/12
-https://github.com/erikdrozina/kernel_xiaomi_sm6150/blob/13/arch/arm64/configs/tucana_defconfig
-https://github.com/erikdrozina/kernel_xiaomi_sm6150/commits/13
-https://github.com/OctaviOS-Devices/kernel_xiaomi_tucana/tree/12
-
-## First steps
+## Building 4.14.275 with GCC
 
 I've initialized a new project and followed the "Porting to a new device" page. A working Android 13 ROM named OctaviOS is available for tucana, so both kernel and device tree are ready. I used this [2] defconfig. Initial check:
 
@@ -100,7 +59,7 @@ The boot process fails after 2-3 seconds. Stopping there now to publish prelimin
 [2] https://raw.githubusercontent.com/OctaviOS-Devices/kernel_xiaomi_tucana/12/arch/arm64/configs/tucana_defconfig
 [3] https://gitlab.com/etn40ff/pmaports/-/blob/xiaomi-sweet/device/testing/linux-xiaomi-sweet/fix_compilation.patch
 
-### 13.0 and clang
+### Building 4.14.299 with clang
 
 In erikdrozina/kernel_xiaomi_sm6150 maintainer has switched to clang. Let's try it too since "try another codebase" is a valid strategy. Now it's 4.14.299. The only change in defconfig is CONFIG_CC_STACKPROTECTOR_NONE=y.
 
@@ -124,4 +83,79 @@ make[2]: *** [../scripts/Makefile.build:364: kernel/jump_label.o] Error 1
 
 It was broken there: https://github.com/erikdrozina/kernel_xiaomi_sm6150/commit/50c395c19174e0bba0cc7ed5d2ddafc08222da3d
 
-Or, disabling CONFIG_JUMP_LABEL=y in defconfig.
+Disabling CONFIG_JUMP_LABEL=y in defconfig helps. The kernel compiles successfully, but doesn't boot.
+
+### Prebuilt kernel
+
+Doesn't work too, but for reference:
+
+```
+paru -Syu --noconfirm mkbootimg
+mkdir uncompressed_boot
+unpackbootimg -i boot.img -o uncompressed_boot
+fastboot boot \                                    
+--cmdline "console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x880000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.usbcontroller=a600000.dwc3 service_locator.enable=1 lpm_levels.sleep_disabled=1 loop.max_part=7 kpti=off buildvariant=userdebug" uncompressed_boot/boot.img-kernel \
+~/.cache/pmbootstrap/chroot_rootfs_xiaomi-tucana/boot/initramfs
+```
+
+## Links
+
+### Device
+
+- https://www.gsmarena.com/xiaomi_mi_note_10_pro-9945.php
+- https://wiki.postmarketos.org/wiki/Qualcomm_Snapdragon_730/730G/732G_(SM7150)
+- https://www.giznext.com/mobile-chipsets/qualcomm-snapdragon-730g-chipset-gnt
+
+### ROMs and recoveries
+
+- https://forum.xda-developers.com/f/xiaomi-mi-note-10-roms-kernels-recoveries-oth.9603/
+- https://forum.xda-developers.com/t/recovery-3-4-0-10-tucana-official-unofficial-twrp-xiaomi-mi-note-10-cc9-pro-stable.4015805/
+- https://forum.xda-developers.com/t/firmware-xiaomi-mi-note-10-pro-mi-cc-9-pro-tucana-auto-updated-daily.4096347/
+- https://forum.xda-developers.com/t/rom-a13-official-octavios.4554983/
+- https://sourceforge.net/projects/erikdrozina-builds/
+
+### tucana kernels
+
+- https://github.com/OctaviOS-Devices/kernel_xiaomi_tucana/tree/12
+- https://github.com/OctaviOS-Devices/kernel_xiaomi_tucana/blob/12/arch/arm64/configs/tucana_defconfig
+
+- https://github.com/erikdrozina/kernel_xiaomi_sm6150/tree/12
+- https://github.com/erikdrozina/kernel_xiaomi_sm6150/blob/12/arch/arm64/configs/tucana_defconfig
+
+- https://github.com/erikdrozina/kernel_xiaomi_sm6150/tree/13
+- https://github.com/erikdrozina/kernel_xiaomi_sm6150/blob/13/arch/arm64/configs/tucana_defconfig
+
+
+### `sweet` port
+
+- https://wiki.postmarketos.org/index.php?title=Xiaomi_Redmi_Note_10_Pro_(xiaomi-sweet)
+- https://github.com/TeamWin/android_device_xiaomi_sweet
+- https://gitlab.com/etn40ff/pmaports/-/tree/xiaomi-sweet/device/testing/linux-xiaomi-sweet
+
+### pmOS Wiki guides
+
+- https://wiki.postmarketos.org/wiki/Kernel_configuration
+- https://wiki.postmarketos.org/wiki/Downstream_kernel_specific_package
+- https://wiki.postmarketos.org/wiki/How_to_find_device-specific_information
+- https://wiki.postmarketos.org/wiki/Porting_to_a_new_device
+- https://wiki.postmarketos.org/wiki/Troubleshooting:boot
+- https://wiki.postmarketos.org/wiki/Troubleshooting:kernel
+- https://wiki.postmarketos.org/wiki/Using_prebuilt_kernels
+- https://wiki.postmarketos.org/wiki/Deviceinfo_reference
+- https://wiki.postmarketos.org/wiki/Qualcomm_Glossary
+
+### ARM64-specific stuff
+
+- https://patchwork.ozlabs.org/project/uboot/patch/20171128020937.27906-1-peng.fan@nxp.com/
+- https://www.rowleydownload.co.uk/arm/documentation/gnu/gcc/AArch64-Options.html
+- https://bugs.llvm.org/show_bug.cgi?id=30792
+- https://reviews.llvm.org/D38479
+- https://patchwork.kernel.org/project/linux-kbuild/patch/20171129000011.55235-4-samitolvanen@google.com/
+
+### Misc
+
+#### Booted OctaviOS cmdline
+
+```
+cgroup_disable=pressure ramoops_memreserve=4M quiet rcupdate.rcu_expedited=1 rcu_nocbs=0-7 console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x880000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.usbcontroller=a600000.dwc3 service_locator.enable=1 lpm_levels.sleep_disabled=1 loop.max_part=7 kpti=off buildvariant=userdebug androidboot.verifiedbootstate=orange androidboot.keymaster=1 root=PARTUUID=7ac9ae5d-bd8f-9066-32f4-b0f9c2facd3a androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.serialno=da6f2552 androidboot.ramdump=disable androidboot.secureboot=1 androidboot.cpuid=0x750f65e9 androidboot.hwversion=6.19.9 androidboot.hwc=GLOBAL androidboot.hwlevel=MP androidboot.baseband=msm msm_drm.dsi_display0=dsi_xiaomi_f4_41_06_0a_fhd_cmd_display: skip_initramfs rootwait ro init=/init androidboot.dtbo_idx=0 androidboot.dtb_idx=0 androidboot.dp=0x0
+```
