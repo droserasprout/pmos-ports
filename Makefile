@@ -1,14 +1,20 @@
 PMAPORTS=~/.cache/pmbootstrap/cache_git/pmaports/device/testing/
 CACHE=~/.cache
-KERNEL=linux-xiaomi-tucana-ericdrozina
+DEVICE=device-xiaomi-tucana
+KERNEL=linux-xiaomi-tucana-erikdrozina
 
 push:
-	rm -r ${PMAPORTS}/${KERNEL}
+	rm -rf ${PMAPORTS}/${DEVICE}
+	rm -rf ${PMAPORTS}/${KERNEL}
+	cp -r ${DEVICE} ${PMAPORTS}
 	cp -r ${KERNEL} ${PMAPORTS}
+	pmbootstrap checksum ${DEVICE}
 	pmbootstrap checksum ${KERNEL}
 
 pull:
-	rm -r ${KERNEL}
+	rm -rf ${DEVICE}
+	rm -rf ${KERNEL}
+	cp -r ${PMAPORTS}/${DEVICE} .
 	cp -r ${PMAPORTS}/${KERNEL} .
 
 kconfig:
@@ -16,6 +22,7 @@ kconfig:
 	make pull
 
 build:
+	pmbootstrap build ${DEVICE}
 	pmbootstrap build ${KERNEL} --force
 
 boot:
@@ -35,3 +42,6 @@ sideload_octavia:
 
 dump_config:
 	adb shell zcat /proc/config.gz > configs/device
+
+init:
+	pmbootstrap init

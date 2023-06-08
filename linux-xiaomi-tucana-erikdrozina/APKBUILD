@@ -1,7 +1,7 @@
 # Reference: <https://postmarketos.org/vendorkernel>
 # Kernel config based on: arch/arm64/configs/tucana_defconfig
 
-pkgname=linux-xiaomi-tucana
+pkgname=linux-xiaomi-tucana-erikdrozina
 pkgver=4.14.299
 pkgrel=0
 pkgdesc="Xiaomi Note 10 Pro kernel fork"

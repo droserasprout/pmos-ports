@@ -8,7 +8,7 @@ license="MIT"
 arch="aarch64"
 options="!check !archcheck"
 depends="
-	linux-xiaomi-tucana
+	linux-xiaomi-tucana-erikdrozina
 	mkbootimg
 	postmarketos-base
 "
