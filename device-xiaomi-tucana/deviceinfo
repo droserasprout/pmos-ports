@@ -17,10 +17,11 @@ deviceinfo_keyboard="false"
 deviceinfo_external_storage="false"
 deviceinfo_screen_width="1080"
 deviceinfo_screen_height="2340"
+deviceinfo_getty="ttyMSM0;115200n8"
 
 # Bootloader related
 deviceinfo_flash_method="fastboot"
-deviceinfo_kernel_cmdline="console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x880000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.usbcontroller=a600000.dwc3 service_locator.enable=1 lpm_levels.sleep_disabled=1 loop.max_part=7 kpti=off buildvariant=userdebug"
+deviceinfo_kernel_cmdline="cgroup_disable=pressure ramoops_memreserve=4M rcupdate.rcu_expedited=1 rcu_nocbs=0-7 console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x880000 service_locator.enable=1 lpm_levels.sleep_disabled=1 loop.max_part=7 kpti=off buildvariant=userdebug printk.devkmsg=on"
 deviceinfo_generate_bootimg="true"
 deviceinfo_bootimg_qcdt="false"
 deviceinfo_bootimg_mtk_mkimage="false"

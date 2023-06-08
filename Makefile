@@ -40,8 +40,9 @@ sideload_octavia:
 	read
 	adb reboot
 
-dump_config:
-	adb shell zcat /proc/config.gz > configs/device
+dump_running:
+	adb shell zcat /proc/config.gz > from_device/config
+	adb shell cat /proc/cmdline > from_device/cmdline
 
 init:
 	pmbootstrap init
