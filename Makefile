@@ -1,21 +1,22 @@
-PMAPORT=~/.cache/pmbootstrap/cache_git/pmaports/device/testing/linux-xiaomi-tucana
+PMAPORTS=~/.cache/pmbootstrap/cache_git/pmaports/device/testing/
 CACHE=~/.cache
+KERNEL=linux-xiaomi-tucana-ericdrozina
 
 push:
-	cp configs/current ${PMAPORT}/config-xiaomi-tucana.aarch64
-	cp APKBUILD ${PMAPORT}/APKBUILD
-	pmbootstrap checksum linux-xiaomi-tucana
+	rm -r ${PMAPORTS}/${KERNEL}
+	cp -r ${KERNEL} ${PMAPORTS}
+	pmbootstrap checksum ${KERNEL}
 
 pull:
-	cp ${PMAPORT}/config-xiaomi-tucana.aarch64 configs/current
-	cp ${PMAPORT}/APKBUILD APKBUILD
+	rm -r ${KERNEL}
+	cp -r ${PMAPORTS}/${KERNEL} .
 
 kconfig:
 	pmbootstrap kconfig edit
 	make pull
 
 build:
-	pmbootstrap build linux-xiaomi-tucana --force
+	pmbootstrap build ${KERNEL} --force
 
 boot:
 	pmbootstrap flasher boot
