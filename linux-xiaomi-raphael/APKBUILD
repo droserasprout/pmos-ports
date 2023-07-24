@@ -1,0 +1,62 @@
+# Reference: <https://postmarketos.org/vendorkernel>
+# Kernel config based on: arch/arm64/configs/raphael_defconfig
+
+pkgname=linux-xiaomi-raphael
+pkgver=4.14.226
+pkgrel=0
+pkgdesc="Xiaomi 9T Pro kernel fork"
+arch="aarch64"
+_carch="arm64"
+_flavor="xiaomi-raphael"
+url="https://kernel.org"
+license="GPL-2.0-only"
+options="!strip !check !tracedeps pmb:cross-native"
+makedepends="
+	bash
+	bc
+	bison
+	devicepkg-dev
+	findutils
+	flex
+	linux-headers
+	openssl-dev
+	perl
+"
+
+# Source
+_repository="android_kernel_xiaomi_sm8150"
+_commit="6ceb32465a3b8fa65bc5d2e34b916aac7024c9b6"
+# _repository="android_kernel_xiaomi_sm8150-legacy"
+# _commit="343ff33bf560de8a6f2debdf1d3b23e27fd364e3"
+_config="config-$_flavor.$arch"
+# $pkgname-$_commit.tar.gz::https://github.com/xiaomi-sm8150-devs/$_repository/archive/$_commit.tar.gz
+source="
+	$pkgname-$_commit.tar.gz::https://github.com/crdroidandroid/$_repository/archive/$_commit.tar.gz
+	$_config
+"
+builddir="$srcdir/$_repository-$_commit"
+_outdir="out"
+
+# CC="clang"
+# HOSTCC="clang"
+
+prepare() {
+	default_prepare
+	REPLACE_GCCH=0 . downstreamkernel_prepare
+}
+
+build() {
+	unset LDFLAGS
+	make O="$_outdir" ARCH="$_carch" CC="${CC:-gcc}" \
+		KBUILD_BUILD_VERSION="$((pkgrel + 1 ))-postmarketOS"
+}
+
+package() {
+	downstreamkernel_package "$builddir" "$pkgdir" "$_carch" \
+		"$_flavor" "$_outdir"
+}
+
+sha512sums="
+1c721806b748d6cb8714a2913c3b1988606f1d92ecb9b107ef63f806bddf629deca9dd78a5623273aae6713dd8a039cc7138dfeed6e474559885e04afae68d51  linux-xiaomi-raphael-6ceb32465a3b8fa65bc5d2e34b916aac7024c9b6.tar.gz
+050c743e322eed79e24f5f19108106d0637102178eb9535e845ba5b7d18495877324fe0df6631862447e7210881d7b85c2063fb0830a95a225ba3ba4811e5747  config-xiaomi-raphael.aarch64
+"

@@ -1,0 +1,28 @@
+# Reference: <https://postmarketos.org/devicepkg>
+pkgname=device-xiaomi-raphael
+pkgdesc="Xiaomi 9T Pro"
+pkgver=0.1
+pkgrel=0
+url="https://postmarketos.org"
+license="MIT"
+arch="aarch64"
+options="!check !archcheck"
+depends="
+	linux-xiaomi-raphael
+	mkbootimg
+	postmarketos-base
+"
+makedepends="devicepkg-dev"
+source="deviceinfo"
+
+build() {
+	devicepkg_build $startdir $pkgname
+}
+
+package() {
+	devicepkg_package $startdir $pkgname
+}
+
+sha512sums="
+d88437e537f0cff3010ccb039f4987d506e5393d4b0d028ea61b2db9437e50712869ecc80ce935c3eb89ba584de70bcbad543d59c247eb3a73424fd362c9148f  deviceinfo
+"

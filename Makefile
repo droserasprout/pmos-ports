@@ -1,7 +1,17 @@
 PMAPORTS=~/.cache/pmbootstrap/cache_git/pmaports/device/testing/
 CACHE=~/.cache
-DEVICE=device-xiaomi-tucana
-KERNEL=linux-xiaomi-tucana-erikdrozina
+
+CODENAME=raphael
+DEVICE=device-xiaomi-raphael
+KERNEL=linux-xiaomi-raphael
+
+# CODENAME=tucana
+# DEVICE=device-xiaomi-tucana
+# KERNEL=linux-xiaomi-tucana-octavios
+
+# CODENAME=tucana
+# DEVICE=device-xiaomi-tucana
+# KERNEL=linux-xiaomi-tucana-erikdrozina
 
 push:
 	rm -rf ${PMAPORTS}/${DEVICE}
@@ -41,8 +51,16 @@ sideload_octavia:
 	adb reboot
 
 dump_running:
-	adb shell zcat /proc/config.gz > from_device/config
-	adb shell cat /proc/cmdline > from_device/cmdline
+	adb shell zcat /proc/config.gz > from-${CODENAME}/config
+	adb shell su -c cat /proc/cmdline > from-${CODENAME}/cmdline
+
+dump_boot:
+	adb shell su -c cat /dev/block/by-name/boot > /tmp/${CODENAME}-boot.img
+	pmbootstrap bootimg_analyze /tmp/${CODENAME}-boot.img > from-${CODENAME}/deviceinfo
 
 init:
 	pmbootstrap init
+
+checksum:
+	pmbootstrap checksum ${DEVICE}
+	pmbootstrap checksum ${KERNEL}
