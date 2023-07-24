@@ -21,6 +21,10 @@ makedepends="
 	linux-headers
 	openssl-dev
 	perl
+	clang
+	llvm
+	lld
+	xz
 	python3
 "
 
@@ -46,6 +50,7 @@ _outdir="out"
 
 CC="clang"
 HOSTCC="clang"
+LD="ld.lld"
 
 prepare() {
 	default_prepare
@@ -65,5 +70,5 @@ package() {
 
 sha512sums="
 1c721806b748d6cb8714a2913c3b1988606f1d92ecb9b107ef63f806bddf629deca9dd78a5623273aae6713dd8a039cc7138dfeed6e474559885e04afae68d51  linux-xiaomi-raphael-6ceb32465a3b8fa65bc5d2e34b916aac7024c9b6.tar.gz
-0bdbff6af6aeb187bf7cc131708cd47b72ba12bf5ae7f19341f5b08956a1de7b0984f6159cdbea1db130adca89fb7c1bbd6a5d6ae3261d1b30bd360d6fdba2b3  config-xiaomi-raphael.aarch64
+19880ef027e89ff2536a2b1d8e747c4d7e6efec5c7141507400d4f323aa0ee10dfbc1d435b3d70b610bf443df347cc552b261c421cd99822a39efd101fc08da1  config-xiaomi-raphael.aarch64
 "
