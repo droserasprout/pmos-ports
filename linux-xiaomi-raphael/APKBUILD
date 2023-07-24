@@ -2,7 +2,7 @@
 # Kernel config based on: arch/arm64/configs/raphael_defconfig
 
 pkgname=linux-xiaomi-raphael
-pkgver=4.14.226
+pkgver=4.14.320
 pkgrel=0
 pkgdesc="Xiaomi 9T Pro kernel fork"
 arch="aarch64"
@@ -21,15 +21,22 @@ makedepends="
 	linux-headers
 	openssl-dev
 	perl
+	python3
 "
 
 # Source
 _repository="android_kernel_xiaomi_sm8150"
 _commit="6ceb32465a3b8fa65bc5d2e34b916aac7024c9b6"
+
 # _repository="android_kernel_xiaomi_sm8150-legacy"
 # _commit="343ff33bf560de8a6f2debdf1d3b23e27fd364e3"
+
+# _repository="sm8150-mainline"
+# _commit="4870a82ab62ee793d9332ebf9d5d83995a2f365e"
+
 _config="config-$_flavor.$arch"
-# $pkgname-$_commit.tar.gz::https://github.com/xiaomi-sm8150-devs/$_repository/archive/$_commit.tar.gz
+	# $pkgname-$_commit.tar.gz::https://github.com/xiaomi-sm8150-devs/$_repository/archive/$_commit.tar.gz
+	# $pkgname-$_commit.tar.gz::https://gitlab.com/sm8150-mainline/linux/-/archive/sm8150/5.17/linux-sm8150-5.17.tar.gz
 source="
 	$pkgname-$_commit.tar.gz::https://github.com/crdroidandroid/$_repository/archive/$_commit.tar.gz
 	$_config
@@ -37,8 +44,8 @@ source="
 builddir="$srcdir/$_repository-$_commit"
 _outdir="out"
 
-# CC="clang"
-# HOSTCC="clang"
+CC="clang"
+HOSTCC="clang"
 
 prepare() {
 	default_prepare
@@ -58,5 +65,5 @@ package() {
 
 sha512sums="
 1c721806b748d6cb8714a2913c3b1988606f1d92ecb9b107ef63f806bddf629deca9dd78a5623273aae6713dd8a039cc7138dfeed6e474559885e04afae68d51  linux-xiaomi-raphael-6ceb32465a3b8fa65bc5d2e34b916aac7024c9b6.tar.gz
-050c743e322eed79e24f5f19108106d0637102178eb9535e845ba5b7d18495877324fe0df6631862447e7210881d7b85c2063fb0830a95a225ba3ba4811e5747  config-xiaomi-raphael.aarch64
+0bdbff6af6aeb187bf7cc131708cd47b72ba12bf5ae7f19341f5b08956a1de7b0984f6159cdbea1db130adca89fb7c1bbd6a5d6ae3261d1b30bd360d6fdba2b3  config-xiaomi-raphael.aarch64
 "
