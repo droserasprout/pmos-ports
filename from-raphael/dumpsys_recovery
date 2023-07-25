@@ -1,0 +1,2409 @@
+/sys/devices/ACV/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 16327 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 16327 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/ACV/power/autosuspend_delay_ms
+/sys/devices/ACV/power/control
+auto
+/sys/devices/ACV/power/runtime_active_time
+0
+/sys/devices/ACV/power/runtime_status
+unsupported
+/sys/devices/ACV/power/runtime_suspended_time
+0
+/sys/devices/ACV/uevent
+OF_NAME=bcm-acv
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-acv
+OF_COMPATIBLE_N=0
+/sys/devices/ACV_DISPLAY/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 780 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/ACV_DISPLAY/power/autosuspend_delay_ms
+/sys/devices/ACV_DISPLAY/power/control
+auto
+/sys/devices/ACV_DISPLAY/power/runtime_active_time
+0
+/sys/devices/ACV_DISPLAY/power/runtime_status
+unsupported
+/sys/devices/ACV_DISPLAY/power/runtime_suspended_time
+0
+/sys/devices/ACV_DISPLAY/uevent
+OF_NAME=bcm-acv_display
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-acv_display
+OF_COMPATIBLE_N=0
+/sys/devices/ALC/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/ALC/power/autosuspend_delay_ms
+/sys/devices/ALC/power/control
+auto
+/sys/devices/ALC/power/runtime_active_time
+0
+/sys/devices/ALC/power/runtime_status
+unsupported
+/sys/devices/ALC/power/runtime_suspended_time
+0
+/sys/devices/ALC/uevent
+OF_NAME=bcm-alc
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-alc
+OF_COMPATIBLE_N=0
+/sys/devices/ALC_DISPLAY/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/ALC_DISPLAY/power/autosuspend_delay_ms
+/sys/devices/ALC_DISPLAY/power/control
+auto
+/sys/devices/ALC_DISPLAY/power/runtime_active_time
+0
+/sys/devices/ALC_DISPLAY/power/runtime_status
+unsupported
+/sys/devices/ALC_DISPLAY/power/runtime_suspended_time
+0
+/sys/devices/ALC_DISPLAY/uevent
+OF_NAME=bcm-alc_display
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-alc_display
+OF_COMPATIBLE_N=0
+/sys/devices/CE0/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/CE0/power/autosuspend_delay_ms
+/sys/devices/CE0/power/control
+auto
+/sys/devices/CE0/power/runtime_active_time
+0
+/sys/devices/CE0/power/runtime_status
+unsupported
+/sys/devices/CE0/power/runtime_suspended_time
+0
+/sys/devices/CE0/uevent
+OF_NAME=bcm-ce0
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-ce0
+OF_COMPATIBLE_N=0
+/sys/devices/CN0/bw
+[0]:(null):Act_IB 1048576 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:(null):Act_IB 524288 Act_AB 0 Slp_IB 20000000 Slp_AB 0
+[2]:(null):Act_IB 0 Act_AB 0 Slp_IB 2400000 Slp_AB 0
+[3]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[4]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[5]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[6]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[7]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[8]:(null):Act_IB 0 Act_AB 0 Slp_IB 40000000 Slp_AB 0
+Max_Act_IB 40000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 40000000 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/CN0/power/autosuspend_delay_ms
+/sys/devices/CN0/power/control
+auto
+/sys/devices/CN0/power/runtime_active_time
+0
+/sys/devices/CN0/power/runtime_status
+unsupported
+/sys/devices/CN0/power/runtime_suspended_time
+0
+/sys/devices/CN0/uevent
+OF_NAME=bcm-cn0
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-cn0
+OF_COMPATIBLE_N=0
+/sys/devices/CO0/bw
+[0]:(null):Act_IB 2097152 Act_AB 0 Slp_IB 16735272960 Slp_AB 0
+Max_Act_IB 16735272960 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 16735272960 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/CO0/power/autosuspend_delay_ms
+/sys/devices/CO0/power/control
+auto
+/sys/devices/CO0/power/runtime_active_time
+0
+/sys/devices/CO0/power/runtime_status
+unsupported
+/sys/devices/CO0/power/runtime_suspended_time
+0
+/sys/devices/CO0/uevent
+OF_NAME=bcm-co0
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-co0
+OF_COMPATIBLE_N=0
+/sys/devices/CO1/bw
+[0]:(null):Act_IB 1048576 Act_AB 0 Slp_IB 8367636480 Slp_AB 0
+Max_Act_IB 8367636480 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 8367636480 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/CO1/power/autosuspend_delay_ms
+/sys/devices/CO1/power/control
+auto
+/sys/devices/CO1/power/runtime_active_time
+0
+/sys/devices/CO1/power/runtime_status
+unsupported
+/sys/devices/CO1/power/runtime_suspended_time
+0
+/sys/devices/CO1/uevent
+OF_NAME=bcm-co1
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-co1
+OF_COMPATIBLE_N=0
+/sys/devices/IP0/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/IP0/power/autosuspend_delay_ms
+/sys/devices/IP0/power/control
+auto
+/sys/devices/IP0/power/runtime_active_time
+0
+/sys/devices/IP0/power/runtime_status
+unsupported
+/sys/devices/IP0/power/runtime_suspended_time
+0
+/sys/devices/IP0/uevent
+OF_NAME=bcm-ip0
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-ip0
+OF_COMPATIBLE_N=0
+/sys/devices/MC0/bw
+[0]:(null):Act_IB 33470545920 Act_AB 0 Slp_IB 33470545920 Slp_AB 1000000000
+Max_Act_IB 33470545920 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 33470545920 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/MC0/power/autosuspend_delay_ms
+/sys/devices/MC0/power/control
+auto
+/sys/devices/MC0/power/runtime_active_time
+0
+/sys/devices/MC0/power/runtime_status
+unsupported
+/sys/devices/MC0/power/runtime_suspended_time
+0
+/sys/devices/MC0/uevent
+OF_NAME=bcm-mc0
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-mc0
+OF_COMPATIBLE_N=0
+/sys/devices/MC0_DISPLAY/bw
+[0]:(null):Act_IB 1600000000 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 1600000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/MC0_DISPLAY/power/autosuspend_delay_ms
+/sys/devices/MC0_DISPLAY/power/control
+auto
+/sys/devices/MC0_DISPLAY/power/runtime_active_time
+0
+/sys/devices/MC0_DISPLAY/power/runtime_status
+unsupported
+/sys/devices/MC0_DISPLAY/power/runtime_suspended_time
+0
+/sys/devices/MC0_DISPLAY/uevent
+OF_NAME=bcm-mc0_display
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-mc0_display
+OF_COMPATIBLE_N=0
+/sys/devices/MM0/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/MM0/power/autosuspend_delay_ms
+/sys/devices/MM0/power/control
+auto
+/sys/devices/MM0/power/runtime_active_time
+0
+/sys/devices/MM0/power/runtime_status
+unsupported
+/sys/devices/MM0/power/runtime_suspended_time
+0
+/sys/devices/MM0/uevent
+OF_NAME=bcm-mm0
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-mm0
+OF_COMPATIBLE_N=0
+/sys/devices/MM0_DISPLAY/bw
+[0]:(null):Act_IB 400000000 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 400000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/MM0_DISPLAY/power/autosuspend_delay_ms
+/sys/devices/MM0_DISPLAY/power/control
+auto
+/sys/devices/MM0_DISPLAY/power/runtime_active_time
+0
+/sys/devices/MM0_DISPLAY/power/runtime_status
+unsupported
+/sys/devices/MM0_DISPLAY/power/runtime_suspended_time
+0
+/sys/devices/MM0_DISPLAY/uevent
+OF_NAME=bcm-mm0_display
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-mm0_display
+OF_COMPATIBLE_N=0
+/sys/devices/MM1/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[2]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[3]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[4]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[5]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[6]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/MM1/power/autosuspend_delay_ms
+/sys/devices/MM1/power/control
+auto
+/sys/devices/MM1/power/runtime_active_time
+0
+/sys/devices/MM1/power/runtime_status
+unsupported
+/sys/devices/MM1/power/runtime_suspended_time
+0
+/sys/devices/MM1/uevent
+OF_NAME=bcm-mm1
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-mm1
+OF_COMPATIBLE_N=0
+/sys/devices/MM1_DISPLAY/bw
+[0]:(null):Act_IB 200000000 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:(null):Act_IB 200000000 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 200000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/MM1_DISPLAY/power/autosuspend_delay_ms
+/sys/devices/MM1_DISPLAY/power/control
+auto
+/sys/devices/MM1_DISPLAY/power/runtime_active_time
+0
+/sys/devices/MM1_DISPLAY/power/runtime_status
+unsupported
+/sys/devices/MM1_DISPLAY/power/runtime_suspended_time
+0
+/sys/devices/MM1_DISPLAY/uevent
+OF_NAME=bcm-mm1_display
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-mm1_display
+OF_COMPATIBLE_N=0
+/sys/devices/MM2/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/MM2/power/autosuspend_delay_ms
+/sys/devices/MM2/power/control
+auto
+/sys/devices/MM2/power/runtime_active_time
+0
+/sys/devices/MM2/power/runtime_status
+unsupported
+/sys/devices/MM2/power/runtime_suspended_time
+0
+/sys/devices/MM2/uevent
+OF_NAME=bcm-mm2
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-mm2
+OF_COMPATIBLE_N=0
+/sys/devices/MM2_DISPLAY/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/MM2_DISPLAY/power/autosuspend_delay_ms
+/sys/devices/MM2_DISPLAY/power/control
+auto
+/sys/devices/MM2_DISPLAY/power/runtime_active_time
+0
+/sys/devices/MM2_DISPLAY/power/runtime_status
+unsupported
+/sys/devices/MM2_DISPLAY/power/runtime_suspended_time
+0
+/sys/devices/MM2_DISPLAY/uevent
+OF_NAME=bcm-mm2_display
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-mm2_display
+OF_COMPATIBLE_N=0
+/sys/devices/MM3/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/MM3/power/autosuspend_delay_ms
+/sys/devices/MM3/power/control
+auto
+/sys/devices/MM3/power/runtime_active_time
+0
+/sys/devices/MM3/power/runtime_status
+unsupported
+/sys/devices/MM3/power/runtime_suspended_time
+0
+/sys/devices/MM3/uevent
+OF_NAME=bcm-mm3
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-mm3
+OF_COMPATIBLE_N=0
+/sys/devices/MM3_DISPLAY/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/MM3_DISPLAY/power/autosuspend_delay_ms
+/sys/devices/MM3_DISPLAY/power/control
+auto
+/sys/devices/MM3_DISPLAY/power/runtime_active_time
+0
+/sys/devices/MM3_DISPLAY/power/runtime_status
+unsupported
+/sys/devices/MM3_DISPLAY/power/runtime_suspended_time
+0
+/sys/devices/MM3_DISPLAY/uevent
+OF_NAME=bcm-mm3_display
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-mm3_display
+OF_COMPATIBLE_N=0
+/sys/devices/QUP0/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[2]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/QUP0/power/autosuspend_delay_ms
+/sys/devices/QUP0/power/control
+auto
+/sys/devices/QUP0/power/runtime_active_time
+0
+/sys/devices/QUP0/power/runtime_status
+unsupported
+/sys/devices/QUP0/power/runtime_suspended_time
+0
+/sys/devices/QUP0/uevent
+OF_NAME=bcm-qup0
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-qup0
+OF_COMPATIBLE_N=0
+/sys/devices/SH0/bw
+[0]:(null):Act_IB 63996690432 Act_AB 0 Slp_IB 33470545920 Slp_AB 1000000000
+Max_Act_IB 63996690432 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 33470545920 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SH0/power/autosuspend_delay_ms
+/sys/devices/SH0/power/control
+auto
+/sys/devices/SH0/power/runtime_active_time
+0
+/sys/devices/SH0/power/runtime_status
+unsupported
+/sys/devices/SH0/power/runtime_suspended_time
+0
+/sys/devices/SH0/uevent
+OF_NAME=bcm-sh0
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sh0
+OF_COMPATIBLE_N=0
+/sys/devices/SH0_DISPLAY/bw
+[0]:(null):Act_IB 1600000000 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 1600000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SH0_DISPLAY/power/autosuspend_delay_ms
+/sys/devices/SH0_DISPLAY/power/control
+auto
+/sys/devices/SH0_DISPLAY/power/runtime_active_time
+0
+/sys/devices/SH0_DISPLAY/power/runtime_status
+unsupported
+/sys/devices/SH0_DISPLAY/power/runtime_suspended_time
+0
+/sys/devices/SH0_DISPLAY/uevent
+OF_NAME=bcm-sh0_display
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sh0_display
+OF_COMPATIBLE_N=0
+/sys/devices/SH2/bw
+[0]:(null):Act_IB 1048576 Act_AB 0 Slp_IB 40000000 Slp_AB 0
+Max_Act_IB 40000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 40000000 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SH2/power/autosuspend_delay_ms
+/sys/devices/SH2/power/control
+auto
+/sys/devices/SH2/power/runtime_active_time
+0
+/sys/devices/SH2/power/runtime_status
+unsupported
+/sys/devices/SH2/power/runtime_suspended_time
+0
+/sys/devices/SH2/uevent
+OF_NAME=bcm-sh2
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sh2
+OF_COMPATIBLE_N=0
+/sys/devices/SH3/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SH3/power/autosuspend_delay_ms
+/sys/devices/SH3/power/control
+auto
+/sys/devices/SH3/power/runtime_active_time
+0
+/sys/devices/SH3/power/runtime_status
+unsupported
+/sys/devices/SH3/power/runtime_suspended_time
+0
+/sys/devices/SH3/uevent
+OF_NAME=bcm-sh3
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sh3
+OF_COMPATIBLE_N=0
+/sys/devices/SH4/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 8367636480 Slp_AB 0
+Max_Act_IB 8367636480 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 8367636480 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SH4/power/autosuspend_delay_ms
+/sys/devices/SH4/power/control
+auto
+/sys/devices/SH4/power/runtime_active_time
+0
+/sys/devices/SH4/power/runtime_status
+unsupported
+/sys/devices/SH4/power/runtime_suspended_time
+0
+/sys/devices/SH4/uevent
+OF_NAME=bcm-sh4
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sh4
+OF_COMPATIBLE_N=0
+/sys/devices/SH5/bw
+[0]:(null):Act_IB 15999172608 Act_AB 0 Slp_IB 40000000 Slp_AB 0
+Max_Act_IB 15999172608 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 40000000 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SH5/power/autosuspend_delay_ms
+/sys/devices/SH5/power/control
+auto
+/sys/devices/SH5/power/runtime_active_time
+0
+/sys/devices/SH5/power/runtime_status
+unsupported
+/sys/devices/SH5/power/runtime_suspended_time
+0
+/sys/devices/SH5/uevent
+OF_NAME=bcm-sh5
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sh5
+OF_COMPATIBLE_N=0
+/sys/devices/SN0/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 2500000000 Slp_AB 1000000000
+Max_Act_IB 2500000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 2500000000 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SN0/power/autosuspend_delay_ms
+/sys/devices/SN0/power/control
+auto
+/sys/devices/SN0/power/runtime_active_time
+0
+/sys/devices/SN0/power/runtime_status
+unsupported
+/sys/devices/SN0/power/runtime_suspended_time
+0
+/sys/devices/SN0/uevent
+OF_NAME=bcm-sn0
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sn0
+OF_COMPATIBLE_N=0
+/sys/devices/SN1/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SN1/power/autosuspend_delay_ms
+/sys/devices/SN1/power/control
+auto
+/sys/devices/SN1/power/runtime_active_time
+0
+/sys/devices/SN1/power/runtime_status
+unsupported
+/sys/devices/SN1/power/runtime_suspended_time
+0
+/sys/devices/SN1/uevent
+OF_NAME=bcm-sn1
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sn1
+OF_COMPATIBLE_N=0
+/sys/devices/SN11/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SN11/power/autosuspend_delay_ms
+/sys/devices/SN11/power/control
+auto
+/sys/devices/SN11/power/runtime_active_time
+0
+/sys/devices/SN11/power/runtime_status
+unsupported
+/sys/devices/SN11/power/runtime_suspended_time
+0
+/sys/devices/SN11/uevent
+OF_NAME=bcm-sn11
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sn11
+OF_COMPATIBLE_N=0
+/sys/devices/SN12/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SN12/power/autosuspend_delay_ms
+/sys/devices/SN12/power/control
+auto
+/sys/devices/SN12/power/runtime_active_time
+0
+/sys/devices/SN12/power/runtime_status
+unsupported
+/sys/devices/SN12/power/runtime_suspended_time
+0
+/sys/devices/SN12/uevent
+OF_NAME=bcm-sn12
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sn12
+OF_COMPATIBLE_N=0
+/sys/devices/SN14/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SN14/power/autosuspend_delay_ms
+/sys/devices/SN14/power/control
+auto
+/sys/devices/SN14/power/runtime_active_time
+0
+/sys/devices/SN14/power/runtime_status
+unsupported
+/sys/devices/SN14/power/runtime_suspended_time
+0
+/sys/devices/SN14/uevent
+OF_NAME=bcm-sn14
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sn14
+OF_COMPATIBLE_N=0
+/sys/devices/SN15/bw
+[0]:(null):Act_IB 1048576 Act_AB 0 Slp_IB 40000000 Slp_AB 0
+Max_Act_IB 40000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 40000000 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SN15/power/autosuspend_delay_ms
+/sys/devices/SN15/power/control
+auto
+/sys/devices/SN15/power/runtime_active_time
+0
+/sys/devices/SN15/power/runtime_status
+unsupported
+/sys/devices/SN15/power/runtime_suspended_time
+0
+/sys/devices/SN15/uevent
+OF_NAME=bcm-sn15
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sn15
+OF_COMPATIBLE_N=0
+/sys/devices/SN2/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SN2/power/autosuspend_delay_ms
+/sys/devices/SN2/power/control
+auto
+/sys/devices/SN2/power/runtime_active_time
+0
+/sys/devices/SN2/power/runtime_status
+unsupported
+/sys/devices/SN2/power/runtime_suspended_time
+0
+/sys/devices/SN2/uevent
+OF_NAME=bcm-sn2
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sn2
+OF_COMPATIBLE_N=0
+/sys/devices/SN3/bw
+[0]:(null):Act_IB 1048576 Act_AB 0 Slp_IB 40000000 Slp_AB 0
+Max_Act_IB 40000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 40000000 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SN3/power/autosuspend_delay_ms
+/sys/devices/SN3/power/control
+auto
+/sys/devices/SN3/power/runtime_active_time
+0
+/sys/devices/SN3/power/runtime_status
+unsupported
+/sys/devices/SN3/power/runtime_suspended_time
+0
+/sys/devices/SN3/uevent
+OF_NAME=bcm-sn3
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sn3
+OF_COMPATIBLE_N=0
+/sys/devices/SN4/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SN4/power/autosuspend_delay_ms
+/sys/devices/SN4/power/control
+auto
+/sys/devices/SN4/power/runtime_active_time
+0
+/sys/devices/SN4/power/runtime_status
+unsupported
+/sys/devices/SN4/power/runtime_suspended_time
+0
+/sys/devices/SN4/uevent
+OF_NAME=bcm-sn4
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sn4
+OF_COMPATIBLE_N=0
+/sys/devices/SN5/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SN5/power/autosuspend_delay_ms
+/sys/devices/SN5/power/control
+auto
+/sys/devices/SN5/power/runtime_active_time
+0
+/sys/devices/SN5/power/runtime_status
+unsupported
+/sys/devices/SN5/power/runtime_suspended_time
+0
+/sys/devices/SN5/uevent
+OF_NAME=bcm-sn5
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sn5
+OF_COMPATIBLE_N=0
+/sys/devices/SN8/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SN8/power/autosuspend_delay_ms
+/sys/devices/SN8/power/control
+auto
+/sys/devices/SN8/power/runtime_active_time
+0
+/sys/devices/SN8/power/runtime_status
+unsupported
+/sys/devices/SN8/power/runtime_suspended_time
+0
+/sys/devices/SN8/uevent
+OF_NAME=bcm-sn8
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sn8
+OF_COMPATIBLE_N=0
+/sys/devices/SN9/bw
+[0]:(null):Act_IB 0 Act_AB 0 Slp_IB 2500000000 Slp_AB 1000000000
+Max_Act_IB 2500000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 2500000000 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/SN9/power/autosuspend_delay_ms
+/sys/devices/SN9/power/control
+auto
+/sys/devices/SN9/power/runtime_active_time
+0
+/sys/devices/SN9/power/runtime_status
+unsupported
+/sys/devices/SN9/power/runtime_suspended_time
+0
+/sys/devices/SN9/uevent
+OF_NAME=bcm-sn9
+OF_FULLNAME=/soc/ad-hoc-bus/bcm-sn9
+OF_COMPATIBLE_N=0
+/sys/devices/apps_rsc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/apps_rsc/power/autosuspend_delay_ms
+/sys/devices/apps_rsc/power/control
+auto
+/sys/devices/apps_rsc/power/runtime_active_time
+0
+/sys/devices/apps_rsc/power/runtime_status
+unsupported
+/sys/devices/apps_rsc/power/runtime_suspended_time
+0
+/sys/devices/apps_rsc/uevent
+OF_NAME=rsc-apps
+OF_FULLNAME=/soc/ad-hoc-bus/rsc-apps
+OF_COMPATIBLE_N=0
+/sys/devices/armv8_pmuv3/cpus
+0-7
+/sys/devices/armv8_pmuv3/events/br_mis_pred
+event=0x010
+/sys/devices/armv8_pmuv3/events/br_mis_pred_retired
+event=0x022
+/sys/devices/armv8_pmuv3/events/br_pred
+event=0x012
+/sys/devices/armv8_pmuv3/events/br_retired
+event=0x021
+/sys/devices/armv8_pmuv3/events/bus_access
+event=0x019
+/sys/devices/armv8_pmuv3/events/bus_cycles
+event=0x01d
+/sys/devices/armv8_pmuv3/events/cid_write_retired
+event=0x00b
+/sys/devices/armv8_pmuv3/events/cpu_cycles
+event=0x011
+/sys/devices/armv8_pmuv3/events/exc_return
+event=0x00a
+/sys/devices/armv8_pmuv3/events/exc_taken
+event=0x009
+/sys/devices/armv8_pmuv3/events/inst_retired
+event=0x008
+/sys/devices/armv8_pmuv3/events/inst_spec
+event=0x01b
+/sys/devices/armv8_pmuv3/events/l1d_cache
+event=0x004
+/sys/devices/armv8_pmuv3/events/l1d_cache_refill
+event=0x003
+/sys/devices/armv8_pmuv3/events/l1d_cache_wb
+event=0x015
+/sys/devices/armv8_pmuv3/events/l1d_tlb
+event=0x025
+/sys/devices/armv8_pmuv3/events/l1d_tlb_refill
+event=0x005
+/sys/devices/armv8_pmuv3/events/l1i_cache
+event=0x014
+/sys/devices/armv8_pmuv3/events/l1i_cache_refill
+event=0x001
+/sys/devices/armv8_pmuv3/events/l1i_tlb
+event=0x026
+/sys/devices/armv8_pmuv3/events/l1i_tlb_refill
+event=0x002
+/sys/devices/armv8_pmuv3/events/l2d_cache
+event=0x016
+/sys/devices/armv8_pmuv3/events/l2d_cache_allocate
+event=0x020
+/sys/devices/armv8_pmuv3/events/l2d_cache_refill
+event=0x017
+/sys/devices/armv8_pmuv3/events/l2d_cache_wb
+event=0x018
+/sys/devices/armv8_pmuv3/events/l2d_tlb
+event=0x02f
+/sys/devices/armv8_pmuv3/events/l2d_tlb_refill
+event=0x02d
+/sys/devices/armv8_pmuv3/events/l3d_cache
+event=0x02b
+/sys/devices/armv8_pmuv3/events/l3d_cache_allocate
+event=0x029
+/sys/devices/armv8_pmuv3/events/l3d_cache_refill
+event=0x02a
+/sys/devices/armv8_pmuv3/events/l3d_cache_wb
+event=0x02c
+/sys/devices/armv8_pmuv3/events/mem_access
+event=0x013
+/sys/devices/armv8_pmuv3/events/memory_error
+event=0x01a
+/sys/devices/armv8_pmuv3/events/stall_backend
+event=0x024
+/sys/devices/armv8_pmuv3/events/stall_frontend
+event=0x023
+/sys/devices/armv8_pmuv3/events/sw_incr
+event=0x000
+/sys/devices/armv8_pmuv3/events/ttbr_write_retired
+event=0x01c
+/sys/devices/armv8_pmuv3/format/event
+config:0-15
+/sys/devices/armv8_pmuv3/perf_event_mux_interval_ms
+10
+/sys/devices/armv8_pmuv3/power/autosuspend_delay_ms
+/sys/devices/armv8_pmuv3/power/control
+auto
+/sys/devices/armv8_pmuv3/power/runtime_active_time
+0
+/sys/devices/armv8_pmuv3/power/runtime_status
+unsupported
+/sys/devices/armv8_pmuv3/power/runtime_suspended_time
+0
+/sys/devices/armv8_pmuv3/type
+6
+/sys/devices/armv8_pmuv3/uevent
+/sys/devices/breakpoint/perf_event_mux_interval_ms
+0
+/sys/devices/breakpoint/power/autosuspend_delay_ms
+/sys/devices/breakpoint/power/control
+auto
+/sys/devices/breakpoint/power/runtime_active_time
+0
+/sys/devices/breakpoint/power/runtime_status
+unsupported
+/sys/devices/breakpoint/power/runtime_suspended_time
+0
+/sys/devices/breakpoint/type
+5
+/sys/devices/breakpoint/uevent
+/sys/devices/cs_etm/format/cycacc
+config:12
+/sys/devices/cs_etm/format/retstack
+config:29
+/sys/devices/cs_etm/format/timestamp
+config:28
+/sys/devices/cs_etm/nr_addr_filters
+8
+/sys/devices/cs_etm/perf_event_mux_interval_ms
+0
+/sys/devices/cs_etm/power/autosuspend_delay_ms
+/sys/devices/cs_etm/power/control
+auto
+/sys/devices/cs_etm/power/runtime_active_time
+0
+/sys/devices/cs_etm/power/runtime_status
+unsupported
+/sys/devices/cs_etm/power/runtime_suspended_time
+0
+/sys/devices/cs_etm/type
+8
+/sys/devices/cs_etm/uevent
+/sys/devices/disp_rsc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/disp_rsc/power/autosuspend_delay_ms
+/sys/devices/disp_rsc/power/control
+auto
+/sys/devices/disp_rsc/power/runtime_active_time
+0
+/sys/devices/disp_rsc/power/runtime_status
+unsupported
+/sys/devices/disp_rsc/power/runtime_suspended_time
+0
+/sys/devices/disp_rsc/uevent
+OF_NAME=rsc-disp
+OF_FULLNAME=/soc/ad-hoc-bus/rsc-disp
+OF_COMPATIBLE_N=0
+/sys/devices/esoc-bus/power/autosuspend_delay_ms
+/sys/devices/esoc-bus/power/control
+auto
+/sys/devices/esoc-bus/power/runtime_active_time
+0
+/sys/devices/esoc-bus/power/runtime_status
+unsupported
+/sys/devices/esoc-bus/power/runtime_suspended_time
+0
+/sys/devices/esoc-bus/uevent
+/sys/devices/fab-aggre1_noc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-aggre1_noc/power/autosuspend_delay_ms
+/sys/devices/fab-aggre1_noc/power/control
+auto
+/sys/devices/fab-aggre1_noc/power/runtime_active_time
+0
+/sys/devices/fab-aggre1_noc/power/runtime_status
+unsupported
+/sys/devices/fab-aggre1_noc/power/runtime_suspended_time
+0
+/sys/devices/fab-aggre1_noc/uevent
+OF_NAME=fab-aggre1_noc
+OF_FULLNAME=/soc/ad-hoc-bus/fab-aggre1_noc
+OF_COMPATIBLE_N=0
+/sys/devices/fab-aggre2_noc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-aggre2_noc/power/autosuspend_delay_ms
+/sys/devices/fab-aggre2_noc/power/control
+auto
+/sys/devices/fab-aggre2_noc/power/runtime_active_time
+0
+/sys/devices/fab-aggre2_noc/power/runtime_status
+unsupported
+/sys/devices/fab-aggre2_noc/power/runtime_suspended_time
+0
+/sys/devices/fab-aggre2_noc/uevent
+OF_NAME=fab-aggre2_noc
+OF_FULLNAME=/soc/ad-hoc-bus/fab-aggre2_noc
+OF_COMPATIBLE_N=0
+/sys/devices/fab-camnoc_virt/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-camnoc_virt/power/autosuspend_delay_ms
+/sys/devices/fab-camnoc_virt/power/control
+auto
+/sys/devices/fab-camnoc_virt/power/runtime_active_time
+0
+/sys/devices/fab-camnoc_virt/power/runtime_status
+unsupported
+/sys/devices/fab-camnoc_virt/power/runtime_suspended_time
+0
+/sys/devices/fab-camnoc_virt/uevent
+OF_NAME=fab-camnoc_virt
+OF_FULLNAME=/soc/ad-hoc-bus/fab-camnoc_virt
+OF_COMPATIBLE_N=0
+/sys/devices/fab-compute_noc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-compute_noc/power/autosuspend_delay_ms
+/sys/devices/fab-compute_noc/power/control
+auto
+/sys/devices/fab-compute_noc/power/runtime_active_time
+0
+/sys/devices/fab-compute_noc/power/runtime_status
+unsupported
+/sys/devices/fab-compute_noc/power/runtime_suspended_time
+0
+/sys/devices/fab-compute_noc/uevent
+OF_NAME=fab-compute_noc
+OF_FULLNAME=/soc/ad-hoc-bus/fab-compute_noc
+OF_COMPATIBLE_N=0
+/sys/devices/fab-config_noc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-config_noc/power/autosuspend_delay_ms
+/sys/devices/fab-config_noc/power/control
+auto
+/sys/devices/fab-config_noc/power/runtime_active_time
+0
+/sys/devices/fab-config_noc/power/runtime_status
+unsupported
+/sys/devices/fab-config_noc/power/runtime_suspended_time
+0
+/sys/devices/fab-config_noc/uevent
+OF_NAME=fab-config_noc
+OF_FULLNAME=/soc/ad-hoc-bus/fab-config_noc
+OF_COMPATIBLE_N=0
+/sys/devices/fab-dc_noc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-dc_noc/power/autosuspend_delay_ms
+/sys/devices/fab-dc_noc/power/control
+auto
+/sys/devices/fab-dc_noc/power/runtime_active_time
+0
+/sys/devices/fab-dc_noc/power/runtime_status
+unsupported
+/sys/devices/fab-dc_noc/power/runtime_suspended_time
+0
+/sys/devices/fab-dc_noc/uevent
+OF_NAME=fab-dc_noc
+OF_FULLNAME=/soc/ad-hoc-bus/fab-dc_noc
+OF_COMPATIBLE_N=0
+/sys/devices/fab-gem_noc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-gem_noc/power/autosuspend_delay_ms
+/sys/devices/fab-gem_noc/power/control
+auto
+/sys/devices/fab-gem_noc/power/runtime_active_time
+0
+/sys/devices/fab-gem_noc/power/runtime_status
+unsupported
+/sys/devices/fab-gem_noc/power/runtime_suspended_time
+0
+/sys/devices/fab-gem_noc/uevent
+OF_NAME=fab-gem_noc
+OF_FULLNAME=/soc/ad-hoc-bus/fab-gem_noc
+OF_COMPATIBLE_N=0
+/sys/devices/fab-gem_noc_display/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-gem_noc_display/power/autosuspend_delay_ms
+/sys/devices/fab-gem_noc_display/power/control
+auto
+/sys/devices/fab-gem_noc_display/power/runtime_active_time
+0
+/sys/devices/fab-gem_noc_display/power/runtime_status
+unsupported
+/sys/devices/fab-gem_noc_display/power/runtime_suspended_time
+0
+/sys/devices/fab-gem_noc_display/uevent
+OF_NAME=fab-gem_noc_display
+OF_FULLNAME=/soc/ad-hoc-bus/fab-gem_noc_display
+OF_COMPATIBLE_N=0
+/sys/devices/fab-ipa_virt/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-ipa_virt/power/autosuspend_delay_ms
+/sys/devices/fab-ipa_virt/power/control
+auto
+/sys/devices/fab-ipa_virt/power/runtime_active_time
+0
+/sys/devices/fab-ipa_virt/power/runtime_status
+unsupported
+/sys/devices/fab-ipa_virt/power/runtime_suspended_time
+0
+/sys/devices/fab-ipa_virt/uevent
+OF_NAME=fab-ipa_virt
+OF_FULLNAME=/soc/ad-hoc-bus/fab-ipa_virt
+OF_COMPATIBLE_N=0
+/sys/devices/fab-mc_virt/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-mc_virt/power/autosuspend_delay_ms
+/sys/devices/fab-mc_virt/power/control
+auto
+/sys/devices/fab-mc_virt/power/runtime_active_time
+0
+/sys/devices/fab-mc_virt/power/runtime_status
+unsupported
+/sys/devices/fab-mc_virt/power/runtime_suspended_time
+0
+/sys/devices/fab-mc_virt/uevent
+OF_NAME=fab-mc_virt
+OF_FULLNAME=/soc/ad-hoc-bus/fab-mc_virt
+OF_COMPATIBLE_N=0
+/sys/devices/fab-mc_virt_display/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-mc_virt_display/power/autosuspend_delay_ms
+/sys/devices/fab-mc_virt_display/power/control
+auto
+/sys/devices/fab-mc_virt_display/power/runtime_active_time
+0
+/sys/devices/fab-mc_virt_display/power/runtime_status
+unsupported
+/sys/devices/fab-mc_virt_display/power/runtime_suspended_time
+0
+/sys/devices/fab-mc_virt_display/uevent
+OF_NAME=fab-mc_virt_display
+OF_FULLNAME=/soc/ad-hoc-bus/fab-mc_virt_display
+OF_COMPATIBLE_N=0
+/sys/devices/fab-mmss_noc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-mmss_noc/power/autosuspend_delay_ms
+/sys/devices/fab-mmss_noc/power/control
+auto
+/sys/devices/fab-mmss_noc/power/runtime_active_time
+0
+/sys/devices/fab-mmss_noc/power/runtime_status
+unsupported
+/sys/devices/fab-mmss_noc/power/runtime_suspended_time
+0
+/sys/devices/fab-mmss_noc/uevent
+OF_NAME=fab-mmss_noc
+OF_FULLNAME=/soc/ad-hoc-bus/fab-mmss_noc
+OF_COMPATIBLE_N=0
+/sys/devices/fab-mmss_noc_display/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-mmss_noc_display/power/autosuspend_delay_ms
+/sys/devices/fab-mmss_noc_display/power/control
+auto
+/sys/devices/fab-mmss_noc_display/power/runtime_active_time
+0
+/sys/devices/fab-mmss_noc_display/power/runtime_status
+unsupported
+/sys/devices/fab-mmss_noc_display/power/runtime_suspended_time
+0
+/sys/devices/fab-mmss_noc_display/uevent
+OF_NAME=fab-mmss_noc_display
+OF_FULLNAME=/soc/ad-hoc-bus/fab-mmss_noc_display
+OF_COMPATIBLE_N=0
+/sys/devices/fab-system_noc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/fab-system_noc/power/autosuspend_delay_ms
+/sys/devices/fab-system_noc/power/control
+auto
+/sys/devices/fab-system_noc/power/runtime_active_time
+0
+/sys/devices/fab-system_noc/power/runtime_status
+unsupported
+/sys/devices/fab-system_noc/power/runtime_suspended_time
+0
+/sys/devices/fab-system_noc/uevent
+OF_NAME=fab-system_noc
+OF_FULLNAME=/soc/ad-hoc-bus/fab-system_noc
+OF_COMPATIBLE_N=0
+/sys/devices/llcc-pmu/perf_event_mux_interval_ms
+10
+/sys/devices/llcc-pmu/power/autosuspend_delay_ms
+/sys/devices/llcc-pmu/power/control
+auto
+/sys/devices/llcc-pmu/power/runtime_active_time
+0
+/sys/devices/llcc-pmu/power/runtime_status
+unsupported
+/sys/devices/llcc-pmu/power/runtime_suspended_time
+0
+/sys/devices/llcc-pmu/type
+7
+/sys/devices/llcc-pmu/uevent
+/sys/devices/mas-acm-apps/bw
+[0]:ipa:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[4]:bps_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[5]:ipe_0_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[6]:ipe_1_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[7]:ife_0_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[8]:ife_1_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[9]:titan_top_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[10]:mdss_core_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[11]:mvsc_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[12]:mvs0_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[13]:mvs1_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[14]:clk_camcc_debugfs:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[15]:clk_dispcc_debugfs:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[16]:clk_videocc_debugfs:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[17]:clk_measure:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[18]:clk_measure:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[19]:clk_measure:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[20]:msm-rng-noc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[21]:ufshc_mem:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[22]:cam_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[23]:soc:qcom,cpu-cpu-llcc-bw:Act_IB 15999172608 Act_AB 0 Slp_IB 0 Slp_AB 0
+[24]:soc:qcom,cpu0-cpu-llcc-lat:Act_IB 15999172608 Act_AB 0 Slp_IB 0 Slp_AB 0
+[25]:soc:qcom,cpu4-cpu-llcc-lat:Act_IB 15999172608 Act_AB 0 Slp_IB 0 Slp_AB 0
+[26]:soc:qcom,snoc_cnoc_keepalive:Act_IB 1048576 Act_AB 0 Slp_IB 0 Slp_AB 0
+[27]:usb0:Act_IB 0 Act_AB 0 Slp_IB 40000000 Slp_AB 0
+[28]:mdss_reg:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[29]:sde_reg:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[30]:mdss_rot_reg:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 15999172608 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 40000000 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-acm-apps/power/autosuspend_delay_ms
+/sys/devices/mas-acm-apps/power/control
+auto
+/sys/devices/mas-acm-apps/power/runtime_active_time
+0
+/sys/devices/mas-acm-apps/power/runtime_status
+unsupported
+/sys/devices/mas-acm-apps/power/runtime_suspended_time
+0
+/sys/devices/mas-acm-apps/uevent
+OF_NAME=mas-acm-apps
+OF_FULLNAME=/soc/ad-hoc-bus/mas-acm-apps
+OF_COMPATIBLE_N=0
+/sys/devices/mas-acm-gpu-tcu/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-acm-gpu-tcu/power/autosuspend_delay_ms
+/sys/devices/mas-acm-gpu-tcu/power/control
+auto
+/sys/devices/mas-acm-gpu-tcu/power/runtime_active_time
+0
+/sys/devices/mas-acm-gpu-tcu/power/runtime_status
+unsupported
+/sys/devices/mas-acm-gpu-tcu/power/runtime_suspended_time
+0
+/sys/devices/mas-acm-gpu-tcu/uevent
+OF_NAME=mas-acm-gpu-tcu
+OF_FULLNAME=/soc/ad-hoc-bus/mas-acm-gpu-tcu
+OF_COMPATIBLE_N=0
+/sys/devices/mas-acm-sys-tcu/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-acm-sys-tcu/power/autosuspend_delay_ms
+/sys/devices/mas-acm-sys-tcu/power/control
+auto
+/sys/devices/mas-acm-sys-tcu/power/runtime_active_time
+0
+/sys/devices/mas-acm-sys-tcu/power/runtime_status
+unsupported
+/sys/devices/mas-acm-sys-tcu/power/runtime_suspended_time
+0
+/sys/devices/mas-acm-sys-tcu/uevent
+OF_NAME=mas-acm-sys-tcu
+OF_FULLNAME=/soc/ad-hoc-bus/mas-acm-sys-tcu
+OF_COMPATIBLE_N=0
+/sys/devices/mas-alc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-alc/power/autosuspend_delay_ms
+/sys/devices/mas-alc/power/control
+auto
+/sys/devices/mas-alc/power/runtime_active_time
+0
+/sys/devices/mas-alc/power/runtime_status
+unsupported
+/sys/devices/mas-alc/power/runtime_suspended_time
+0
+/sys/devices/mas-alc/uevent
+OF_NAME=mas-alc
+OF_FULLNAME=/soc/ad-hoc-bus/mas-alc
+OF_COMPATIBLE_N=0
+/sys/devices/mas-ipa-core-master/bw
+[0]:ipa:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-ipa-core-master/power/autosuspend_delay_ms
+/sys/devices/mas-ipa-core-master/power/control
+auto
+/sys/devices/mas-ipa-core-master/power/runtime_active_time
+0
+/sys/devices/mas-ipa-core-master/power/runtime_status
+unsupported
+/sys/devices/mas-ipa-core-master/power/runtime_suspended_time
+0
+/sys/devices/mas-ipa-core-master/uevent
+OF_NAME=mas-ipa-core-master
+OF_FULLNAME=/soc/ad-hoc-bus/mas-ipa-core-master
+OF_COMPATIBLE_N=0
+/sys/devices/mas-llcc-mc/bw
+[0]:ipa:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[3]:scm_pas:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[4]:pil-venus:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[5]:cc0000.qcom,qupv3_2_geni_se:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[6]:grp3d:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[7]:qcedev-noc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[8]:qcrypto-noc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[9]:ufshc_mem:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[10]:8c0000.qcom,qupv3_0_geni_se:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[11]:ac0000.qcom,qupv3_1_geni_se:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[12]:cam_hf_1_mnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[13]:cam_hf_2_mnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[14]:cam_sf_1_mnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[15]:soc:qcom,cpu-llcc-ddr-bw:Act_IB 8367636480 Act_AB 0 Slp_IB 0 Slp_AB 0
+[16]:soc:qcom,npu-npu-ddr-bw:Act_IB 0 Act_AB 0 Slp_IB 8367636480 Slp_AB 0
+[17]:soc:qcom,cpu0-llcc-ddr-lat:Act_IB 8367636480 Act_AB 0 Slp_IB 0 Slp_AB 0
+[18]:soc:qcom,cpu4-llcc-ddr-lat:Act_IB 8367636480 Act_AB 0 Slp_IB 0 Slp_AB 0
+[19]:soc:qcom,cpu4-cpu-ddr-latfloor:Act_IB 8367636480 Act_AB 0 Slp_IB 0 Slp_AB 0
+[20]:soc:qcom,gpubw:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[21]:usb0:Act_IB 0 Act_AB 0 Slp_IB 2500000000 Slp_AB 1000000000
+[22]:mdss_sde:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[23]:mdss_sde:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[24]:mdss_rotator:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 8367636480 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 8367636480 Sum_Slp_AB 1000000000 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-llcc-mc/power/autosuspend_delay_ms
+/sys/devices/mas-llcc-mc/power/control
+auto
+/sys/devices/mas-llcc-mc/power/runtime_active_time
+0
+/sys/devices/mas-llcc-mc/power/runtime_status
+unsupported
+/sys/devices/mas-llcc-mc/power/runtime_suspended_time
+0
+/sys/devices/mas-llcc-mc/uevent
+OF_NAME=mas-llcc-mc
+OF_FULLNAME=/soc/ad-hoc-bus/mas-llcc-mc
+OF_COMPATIBLE_N=0
+/sys/devices/mas-llcc-mc_display/bw
+[0]:disp_rsc_ebi:Act_IB 400000000 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 400000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-llcc-mc_display/power/autosuspend_delay_ms
+/sys/devices/mas-llcc-mc_display/power/control
+auto
+/sys/devices/mas-llcc-mc_display/power/runtime_active_time
+0
+/sys/devices/mas-llcc-mc_display/power/runtime_status
+unsupported
+/sys/devices/mas-llcc-mc_display/power/runtime_suspended_time
+0
+/sys/devices/mas-llcc-mc_display/uevent
+OF_NAME=mas-llcc-mc_display
+OF_FULLNAME=/soc/ad-hoc-bus/mas-llcc-mc_display
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-a1noc-cfg/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-a1noc-cfg/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-a1noc-cfg/power/control
+auto
+/sys/devices/mas-qhm-a1noc-cfg/power/runtime_active_time
+0
+/sys/devices/mas-qhm-a1noc-cfg/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-a1noc-cfg/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-a1noc-cfg/uevent
+OF_NAME=mas-qhm-a1noc-cfg
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-a1noc-cfg
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-a2noc-cfg/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-a2noc-cfg/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-a2noc-cfg/power/control
+auto
+/sys/devices/mas-qhm-a2noc-cfg/power/runtime_active_time
+0
+/sys/devices/mas-qhm-a2noc-cfg/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-a2noc-cfg/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-a2noc-cfg/uevent
+OF_NAME=mas-qhm-a2noc-cfg
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-a2noc-cfg
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-cnoc-dc-noc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-cnoc-dc-noc/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-cnoc-dc-noc/power/control
+auto
+/sys/devices/mas-qhm-cnoc-dc-noc/power/runtime_active_time
+0
+/sys/devices/mas-qhm-cnoc-dc-noc/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-cnoc-dc-noc/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-cnoc-dc-noc/uevent
+OF_NAME=mas-qhm-cnoc-dc-noc
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-cnoc-dc-noc
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-gemnoc-cfg/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-gemnoc-cfg/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-gemnoc-cfg/power/control
+auto
+/sys/devices/mas-qhm-gemnoc-cfg/power/runtime_active_time
+0
+/sys/devices/mas-qhm-gemnoc-cfg/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-gemnoc-cfg/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-gemnoc-cfg/uevent
+OF_NAME=mas-qhm-gemnoc-cfg
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-gemnoc-cfg
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-mnoc-cfg/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-mnoc-cfg/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-mnoc-cfg/power/control
+auto
+/sys/devices/mas-qhm-mnoc-cfg/power/runtime_active_time
+0
+/sys/devices/mas-qhm-mnoc-cfg/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-mnoc-cfg/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-mnoc-cfg/uevent
+OF_NAME=mas-qhm-mnoc-cfg
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-mnoc-cfg
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-qdss-bam/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-qdss-bam/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-qdss-bam/power/control
+auto
+/sys/devices/mas-qhm-qdss-bam/power/runtime_active_time
+0
+/sys/devices/mas-qhm-qdss-bam/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-qdss-bam/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-qdss-bam/uevent
+OF_NAME=mas-qhm-qdss-bam
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-qdss-bam
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-qspi/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-qspi/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-qspi/power/control
+auto
+/sys/devices/mas-qhm-qspi/power/runtime_active_time
+0
+/sys/devices/mas-qhm-qspi/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-qspi/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-qspi/uevent
+OF_NAME=mas-qhm-qspi
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-qspi
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-qup0/bw
+[0]:8c0000.qcom,qupv3_0_geni_se:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-qup0/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-qup0/power/control
+auto
+/sys/devices/mas-qhm-qup0/power/runtime_active_time
+0
+/sys/devices/mas-qhm-qup0/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-qup0/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-qup0/uevent
+OF_NAME=mas-qhm-qup0
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-qup0
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-qup1/bw
+[0]:ac0000.qcom,qupv3_1_geni_se:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-qup1/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-qup1/power/control
+auto
+/sys/devices/mas-qhm-qup1/power/runtime_active_time
+0
+/sys/devices/mas-qhm-qup1/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-qup1/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-qup1/uevent
+OF_NAME=mas-qhm-qup1
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-qup1
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-qup2/bw
+[0]:cc0000.qcom,qupv3_2_geni_se:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-qup2/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-qup2/power/control
+auto
+/sys/devices/mas-qhm-qup2/power/runtime_active_time
+0
+/sys/devices/mas-qhm-qup2/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-qup2/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-qup2/uevent
+OF_NAME=mas-qhm-qup2
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-qup2
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-sensorss-ahb/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-sensorss-ahb/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-sensorss-ahb/power/control
+auto
+/sys/devices/mas-qhm-sensorss-ahb/power/runtime_active_time
+0
+/sys/devices/mas-qhm-sensorss-ahb/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-sensorss-ahb/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-sensorss-ahb/uevent
+OF_NAME=mas-qhm-sensorss-ahb
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-sensorss-ahb
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-snoc-cfg/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-snoc-cfg/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-snoc-cfg/power/control
+auto
+/sys/devices/mas-qhm-snoc-cfg/power/runtime_active_time
+0
+/sys/devices/mas-qhm-snoc-cfg/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-snoc-cfg/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-snoc-cfg/uevent
+OF_NAME=mas-qhm-snoc-cfg
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-snoc-cfg
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-spdm/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-spdm/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-spdm/power/control
+auto
+/sys/devices/mas-qhm-spdm/power/runtime_active_time
+0
+/sys/devices/mas-qhm-spdm/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-spdm/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-spdm/uevent
+OF_NAME=mas-qhm-spdm
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-spdm
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qhm-tsif/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qhm-tsif/power/autosuspend_delay_ms
+/sys/devices/mas-qhm-tsif/power/control
+auto
+/sys/devices/mas-qhm-tsif/power/runtime_active_time
+0
+/sys/devices/mas-qhm-tsif/power/runtime_status
+unsupported
+/sys/devices/mas-qhm-tsif/power/runtime_suspended_time
+0
+/sys/devices/mas-qhm-tsif/uevent
+OF_NAME=mas-qhm-tsif
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qhm-tsif
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-aggre1-noc/bw
+[0]:ufshc_mem:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:8c0000.qcom,qupv3_0_geni_se:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[2]:usb0:Act_IB 0 Act_AB 0 Slp_IB 2500000000 Slp_AB 1000000000
+[3]:usb0:Act_IB 0 Act_AB 0 Slp_IB 2400000 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 2500000000 Sum_Slp_AB 1000000000 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-aggre1-noc/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-aggre1-noc/power/control
+auto
+/sys/devices/mas-qnm-aggre1-noc/power/runtime_active_time
+0
+/sys/devices/mas-qnm-aggre1-noc/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-aggre1-noc/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-aggre1-noc/uevent
+OF_NAME=mas-qnm-aggre1-noc
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-aggre1-noc
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-aggre2-noc/bw
+[0]:ipa:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:ipa:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[2]:scm_pas:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[3]:cc0000.qcom,qupv3_2_geni_se:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[4]:qcedev-noc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[5]:qcrypto-noc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[6]:ac0000.qcom,qupv3_1_geni_se:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-aggre2-noc/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-aggre2-noc/power/control
+auto
+/sys/devices/mas-qnm-aggre2-noc/power/runtime_active_time
+0
+/sys/devices/mas-qnm-aggre2-noc/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-aggre2-noc/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-aggre2-noc/uevent
+OF_NAME=mas-qnm-aggre2-noc
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-aggre2-noc
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-cmpnoc/bw
+[0]:soc:qcom,npu-npu-ddr-bw:Act_IB 0 Act_AB 0 Slp_IB 8367636480 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 8367636480 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-cmpnoc/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-cmpnoc/power/control
+auto
+/sys/devices/mas-qnm-cmpnoc/power/runtime_active_time
+0
+/sys/devices/mas-qnm-cmpnoc/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-cmpnoc/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-cmpnoc/uevent
+OF_NAME=mas-qnm-cmpnoc
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-cmpnoc
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-cnoc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-cnoc/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-cnoc/power/control
+auto
+/sys/devices/mas-qnm-cnoc/power/runtime_active_time
+0
+/sys/devices/mas-qnm-cnoc/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-cnoc/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-cnoc/uevent
+OF_NAME=mas-qnm-cnoc
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-cnoc
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-gemnoc/bw
+[0]:apps_smmu:Act_IB 1000000 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:apps_smmu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[2]:apps_smmu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[3]:apps_smmu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[4]:apps_smmu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[5]:ipa:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[9]:bps_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[10]:ipe_0_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[11]:ipe_1_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[12]:ife_0_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[13]:ife_1_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[14]:titan_top_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[15]:mdss_core_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[16]:mvsc_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[17]:mvs0_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[18]:mvs1_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[19]:clk_camcc_debugfs:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[20]:clk_dispcc_debugfs:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[21]:clk_videocc_debugfs:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[22]:clk_measure:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[23]:clk_measure:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[24]:clk_measure:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[25]:msm-rng-noc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[26]:cnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[27]:ufshc_mem:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[28]:cam_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[29]:soc:qcom,snoc_cnoc_keepalive:Act_IB 1048576 Act_AB 0 Slp_IB 0 Slp_AB 0
+[30]:usb0:Act_IB 0 Act_AB 0 Slp_IB 40000000 Slp_AB 0
+[31]:mdss_reg:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[32]:sde_reg:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[33]:mdss_rot_reg:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 1048576 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 40000000 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-gemnoc/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-gemnoc/power/control
+auto
+/sys/devices/mas-qnm-gemnoc/power/runtime_active_time
+0
+/sys/devices/mas-qnm-gemnoc/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-gemnoc/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-gemnoc/uevent
+OF_NAME=mas-qnm-gemnoc
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-gemnoc
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-gpu/bw
+[0]:grp3d:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:cnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[2]:soc:qcom,gpubw:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-gpu/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-gpu/power/control
+auto
+/sys/devices/mas-qnm-gpu/power/runtime_active_time
+0
+/sys/devices/mas-qnm-gpu/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-gpu/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-gpu/uevent
+OF_NAME=mas-qnm-gpu
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-gpu
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-mnoc-hf/bw
+[2]:cam_hf_1_mnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[3]:cam_hf_2_mnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[4]:mdss_sde:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[5]:mdss_sde:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-mnoc-hf/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-mnoc-hf/power/control
+auto
+/sys/devices/mas-qnm-mnoc-hf/power/runtime_active_time
+0
+/sys/devices/mas-qnm-mnoc-hf/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-mnoc-hf/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-mnoc-hf/uevent
+OF_NAME=mas-qnm-mnoc-hf
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-mnoc-hf
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-mnoc-hf_display/bw
+[0]:disp_rsc_llcc:Act_IB 400000000 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 400000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-mnoc-hf_display/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-mnoc-hf_display/power/control
+auto
+/sys/devices/mas-qnm-mnoc-hf_display/power/runtime_active_time
+0
+/sys/devices/mas-qnm-mnoc-hf_display/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-mnoc-hf_display/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-mnoc-hf_display/uevent
+OF_NAME=mas-qnm-mnoc-hf_display
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-mnoc-hf_display
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-mnoc-sf/bw
+[0]:pil-venus:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:cam_sf_1_mnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[2]:mdss_rotator:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-mnoc-sf/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-mnoc-sf/power/control
+auto
+/sys/devices/mas-qnm-mnoc-sf/power/runtime_active_time
+0
+/sys/devices/mas-qnm-mnoc-sf/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-mnoc-sf/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-mnoc-sf/uevent
+OF_NAME=mas-qnm-mnoc-sf
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-mnoc-sf
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-mnoc-sf_display/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-mnoc-sf_display/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-mnoc-sf_display/power/control
+auto
+/sys/devices/mas-qnm-mnoc-sf_display/power/runtime_active_time
+0
+/sys/devices/mas-qnm-mnoc-sf_display/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-mnoc-sf_display/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-mnoc-sf_display/uevent
+OF_NAME=mas-qnm-mnoc-sf_display
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-mnoc-sf_display
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-npu/bw
+[0]:apps_smmu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:apps_smmu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[2]:pil-cdsp:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[3]:soc:qcom,npu-npu-ddr-bw:Act_IB 0 Act_AB 0 Slp_IB 8367636480 Slp_AB 0
+[4]:soc:qcom,cdsp_keepalive:Act_IB 1048576 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 1048576 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 8367636480 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-npu/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-npu/power/control
+auto
+/sys/devices/mas-qnm-npu/power/runtime_active_time
+0
+/sys/devices/mas-qnm-npu/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-npu/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-npu/uevent
+OF_NAME=mas-qnm-npu
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-npu
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-pcie/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-pcie/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-pcie/power/control
+auto
+/sys/devices/mas-qnm-pcie/power/runtime_active_time
+0
+/sys/devices/mas-qnm-pcie/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-pcie/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-pcie/uevent
+OF_NAME=mas-qnm-pcie
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-pcie
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-snoc/bw
+[0]:apps_smmu:Act_IB 1000000 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:apps_smmu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[2]:apps_smmu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[3]:apps_smmu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[4]:apps_smmu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[5]:ipa:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[9]:bps_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[10]:ipe_0_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[11]:ipe_1_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[12]:ife_0_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[13]:ife_1_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[14]:titan_top_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[15]:mdss_core_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[16]:mvsc_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[17]:mvs0_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[18]:mvs1_gdsc_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[19]:clk_camcc_debugfs:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[20]:clk_dispcc_debugfs:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[21]:clk_videocc_debugfs:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[22]:clk_measure:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[23]:clk_measure:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[24]:clk_measure:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[25]:msm-rng-noc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[26]:ufshc_mem:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[27]:cam_ahb:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[28]:soc:qcom,snoc_cnoc_keepalive:Act_IB 1048576 Act_AB 0 Slp_IB 0 Slp_AB 0
+[29]:usb0:Act_IB 0 Act_AB 0 Slp_IB 2400000 Slp_AB 0
+[30]:usb0:Act_IB 0 Act_AB 0 Slp_IB 40000000 Slp_AB 0
+[31]:mdss_reg:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[32]:sde_reg:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[33]:mdss_rot_reg:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 1048576 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 40000000 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-snoc/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-snoc/power/control
+auto
+/sys/devices/mas-qnm-snoc/power/runtime_active_time
+0
+/sys/devices/mas-qnm-snoc/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-snoc/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-snoc/uevent
+OF_NAME=mas-qnm-snoc
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-snoc
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-snoc-gc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-snoc-gc/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-snoc-gc/power/control
+auto
+/sys/devices/mas-qnm-snoc-gc/power/runtime_active_time
+0
+/sys/devices/mas-qnm-snoc-gc/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-snoc-gc/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-snoc-gc/uevent
+OF_NAME=mas-qnm-snoc-gc
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-snoc-gc
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qnm-snoc-sf/bw
+[0]:ipa:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:scm_pas:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[2]:cc0000.qcom,qupv3_2_geni_se:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[3]:qcedev-noc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[4]:qcrypto-noc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[5]:ufshc_mem:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[6]:8c0000.qcom,qupv3_0_geni_se:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[7]:ac0000.qcom,qupv3_1_geni_se:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[8]:usb0:Act_IB 0 Act_AB 0 Slp_IB 2500000000 Slp_AB 1000000000
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 2500000000 Sum_Slp_AB 1000000000 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qnm-snoc-sf/power/autosuspend_delay_ms
+/sys/devices/mas-qnm-snoc-sf/power/control
+auto
+/sys/devices/mas-qnm-snoc-sf/power/runtime_active_time
+0
+/sys/devices/mas-qnm-snoc-sf/power/runtime_status
+unsupported
+/sys/devices/mas-qnm-snoc-sf/power/runtime_suspended_time
+0
+/sys/devices/mas-qnm-snoc-sf/uevent
+OF_NAME=mas-qnm-snoc-sf
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qnm-snoc-sf
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-camnoc-hf0/bw
+[0]:cam_hf_1_mnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-camnoc-hf0/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-camnoc-hf0/power/control
+auto
+/sys/devices/mas-qxm-camnoc-hf0/power/runtime_active_time
+0
+/sys/devices/mas-qxm-camnoc-hf0/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-camnoc-hf0/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-camnoc-hf0/uevent
+OF_NAME=mas-qxm-camnoc-hf0
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-camnoc-hf0
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-camnoc-hf0-uncomp/bw
+[0]:cam_hf_1_camnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-camnoc-hf0-uncomp/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-camnoc-hf0-uncomp/power/control
+auto
+/sys/devices/mas-qxm-camnoc-hf0-uncomp/power/runtime_active_time
+0
+/sys/devices/mas-qxm-camnoc-hf0-uncomp/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-camnoc-hf0-uncomp/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-camnoc-hf0-uncomp/uevent
+OF_NAME=mas-qxm-camnoc-hf0-uncomp
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-camnoc-hf0-uncomp
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-camnoc-hf1/bw
+[0]:cam_hf_2_mnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-camnoc-hf1/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-camnoc-hf1/power/control
+auto
+/sys/devices/mas-qxm-camnoc-hf1/power/runtime_active_time
+0
+/sys/devices/mas-qxm-camnoc-hf1/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-camnoc-hf1/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-camnoc-hf1/uevent
+OF_NAME=mas-qxm-camnoc-hf1
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-camnoc-hf1
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-camnoc-hf1-uncomp/bw
+[0]:cam_hf_2_camnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-camnoc-hf1-uncomp/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-camnoc-hf1-uncomp/power/control
+auto
+/sys/devices/mas-qxm-camnoc-hf1-uncomp/power/runtime_active_time
+0
+/sys/devices/mas-qxm-camnoc-hf1-uncomp/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-camnoc-hf1-uncomp/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-camnoc-hf1-uncomp/uevent
+OF_NAME=mas-qxm-camnoc-hf1-uncomp
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-camnoc-hf1-uncomp
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-camnoc-sf/bw
+[0]:mnoc_sf_0_tbu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:cam_sf_1_mnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-camnoc-sf/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-camnoc-sf/power/control
+auto
+/sys/devices/mas-qxm-camnoc-sf/power/runtime_active_time
+0
+/sys/devices/mas-qxm-camnoc-sf/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-camnoc-sf/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-camnoc-sf/uevent
+OF_NAME=mas-qxm-camnoc-sf
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-camnoc-sf
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-camnoc-sf-uncomp/bw
+[0]:cam_sf_1_camnoc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-camnoc-sf-uncomp/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-camnoc-sf-uncomp/power/control
+auto
+/sys/devices/mas-qxm-camnoc-sf-uncomp/power/runtime_active_time
+0
+/sys/devices/mas-qxm-camnoc-sf-uncomp/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-camnoc-sf-uncomp/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-camnoc-sf-uncomp/uevent
+OF_NAME=mas-qxm-camnoc-sf-uncomp
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-camnoc-sf-uncomp
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-crypto/bw
+[0]:scm_pas:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:qcedev-noc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[2]:qcrypto-noc:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-crypto/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-crypto/power/control
+auto
+/sys/devices/mas-qxm-crypto/power/runtime_active_time
+0
+/sys/devices/mas-qxm-crypto/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-crypto/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-crypto/uevent
+OF_NAME=mas-qxm-crypto
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-crypto
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-ecc/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-ecc/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-ecc/power/control
+auto
+/sys/devices/mas-qxm-ecc/power/runtime_active_time
+0
+/sys/devices/mas-qxm-ecc/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-ecc/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-ecc/uevent
+OF_NAME=mas-qxm-ecc
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-ecc
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-ipa/bw
+[0]:ipa:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:ipa:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-ipa/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-ipa/power/control
+auto
+/sys/devices/mas-qxm-ipa/power/runtime_active_time
+0
+/sys/devices/mas-qxm-ipa/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-ipa/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-ipa/uevent
+OF_NAME=mas-qxm-ipa
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-ipa
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-mdp0/bw
+[0]:mnoc_hf_1_tbu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[1]:mnoc_hf_0_tbu:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+[3]:mdss_sde:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-mdp0/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-mdp0/power/control
+auto
+/sys/devices/mas-qxm-mdp0/power/runtime_active_time
+0
+/sys/devices/mas-qxm-mdp0/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-mdp0/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-mdp0/uevent
+OF_NAME=mas-qxm-mdp0
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-mdp0
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-mdp0_display/bw
+[0]:disp_rsc_mnoc:Act_IB 200000000 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 200000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-mdp0_display/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-mdp0_display/power/control
+auto
+/sys/devices/mas-qxm-mdp0_display/power/runtime_active_time
+0
+/sys/devices/mas-qxm-mdp0_display/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-mdp0_display/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-mdp0_display/uevent
+OF_NAME=mas-qxm-mdp0_display
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-mdp0_display
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-mdp1/bw
+[1]:mdss_sde:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-mdp1/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-mdp1/power/control
+auto
+/sys/devices/mas-qxm-mdp1/power/runtime_active_time
+0
+/sys/devices/mas-qxm-mdp1/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-mdp1/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-mdp1/uevent
+OF_NAME=mas-qxm-mdp1
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-mdp1
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-mdp1_display/bw
+[0]:disp_rsc_mnoc:Act_IB 200000000 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 200000000 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-mdp1_display/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-mdp1_display/power/control
+auto
+/sys/devices/mas-qxm-mdp1_display/power/runtime_active_time
+0
+/sys/devices/mas-qxm-mdp1_display/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-mdp1_display/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-mdp1_display/uevent
+OF_NAME=mas-qxm-mdp1_display
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-mdp1_display
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-pimem/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-pimem/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-pimem/power/control
+auto
+/sys/devices/mas-qxm-pimem/power/runtime_active_time
+0
+/sys/devices/mas-qxm-pimem/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-pimem/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-pimem/uevent
+OF_NAME=mas-qxm-pimem
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-pimem
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-rot/bw
+[0]:mdss_rotator:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-rot/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-rot/power/control
+auto
+/sys/devices/mas-qxm-rot/power/runtime_active_time
+0
+/sys/devices/mas-qxm-rot/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-rot/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-rot/uevent
+OF_NAME=mas-qxm-rot
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-rot
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-rot_display/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-rot_display/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-rot_display/power/control
+auto
+/sys/devices/mas-qxm-rot_display/power/runtime_active_time
+0
+/sys/devices/mas-qxm-rot_display/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-rot_display/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-rot_display/uevent
+OF_NAME=mas-qxm-rot_display
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-rot_display
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-venus-arm9/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-venus-arm9/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-venus-arm9/power/control
+auto
+/sys/devices/mas-qxm-venus-arm9/power/runtime_active_time
+0
+/sys/devices/mas-qxm-venus-arm9/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-venus-arm9/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-venus-arm9/uevent
+OF_NAME=mas-qxm-venus-arm9
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-venus-arm9
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-venus0/bw
+[0]:pil-venus:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-venus0/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-venus0/power/control
+auto
+/sys/devices/mas-qxm-venus0/power/runtime_active_time
+0
+/sys/devices/mas-qxm-venus0/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-venus0/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-venus0/uevent
+OF_NAME=mas-qxm-venus0
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-venus0
+OF_COMPATIBLE_N=0
+/sys/devices/mas-qxm-venus1/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-qxm-venus1/power/autosuspend_delay_ms
+/sys/devices/mas-qxm-venus1/power/control
+auto
+/sys/devices/mas-qxm-venus1/power/runtime_active_time
+0
+/sys/devices/mas-qxm-venus1/power/runtime_status
+unsupported
+/sys/devices/mas-qxm-venus1/power/runtime_suspended_time
+0
+/sys/devices/mas-qxm-venus1/uevent
+OF_NAME=mas-qxm-venus1
+OF_FULLNAME=/soc/ad-hoc-bus/mas-qxm-venus1
+OF_COMPATIBLE_N=0
+/sys/devices/mas-xm-emac/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-xm-emac/power/autosuspend_delay_ms
+/sys/devices/mas-xm-emac/power/control
+auto
+/sys/devices/mas-xm-emac/power/runtime_active_time
+0
+/sys/devices/mas-xm-emac/power/runtime_status
+unsupported
+/sys/devices/mas-xm-emac/power/runtime_suspended_time
+0
+/sys/devices/mas-xm-emac/uevent
+OF_NAME=mas-xm-emac
+OF_FULLNAME=/soc/ad-hoc-bus/mas-xm-emac
+OF_COMPATIBLE_N=0
+/sys/devices/mas-xm-gic/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-xm-gic/power/autosuspend_delay_ms
+/sys/devices/mas-xm-gic/power/control
+auto
+/sys/devices/mas-xm-gic/power/runtime_active_time
+0
+/sys/devices/mas-xm-gic/power/runtime_status
+unsupported
+/sys/devices/mas-xm-gic/power/runtime_suspended_time
+0
+/sys/devices/mas-xm-gic/uevent
+OF_NAME=mas-xm-gic
+OF_FULLNAME=/soc/ad-hoc-bus/mas-xm-gic
+OF_COMPATIBLE_N=0
+/sys/devices/mas-xm-pcie3-0/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-xm-pcie3-0/power/autosuspend_delay_ms
+/sys/devices/mas-xm-pcie3-0/power/control
+auto
+/sys/devices/mas-xm-pcie3-0/power/runtime_active_time
+0
+/sys/devices/mas-xm-pcie3-0/power/runtime_status
+unsupported
+/sys/devices/mas-xm-pcie3-0/power/runtime_suspended_time
+0
+/sys/devices/mas-xm-pcie3-0/uevent
+OF_NAME=mas-xm-pcie3-0
+OF_FULLNAME=/soc/ad-hoc-bus/mas-xm-pcie3-0
+OF_COMPATIBLE_N=0
+/sys/devices/mas-xm-pcie3-1/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-xm-pcie3-1/power/autosuspend_delay_ms
+/sys/devices/mas-xm-pcie3-1/power/control
+auto
+/sys/devices/mas-xm-pcie3-1/power/runtime_active_time
+0
+/sys/devices/mas-xm-pcie3-1/power/runtime_status
+unsupported
+/sys/devices/mas-xm-pcie3-1/power/runtime_suspended_time
+0
+/sys/devices/mas-xm-pcie3-1/uevent
+OF_NAME=mas-xm-pcie3-1
+OF_FULLNAME=/soc/ad-hoc-bus/mas-xm-pcie3-1
+OF_COMPATIBLE_N=0
+/sys/devices/mas-xm-qdss-dap/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-xm-qdss-dap/power/autosuspend_delay_ms
+/sys/devices/mas-xm-qdss-dap/power/control
+auto
+/sys/devices/mas-xm-qdss-dap/power/runtime_active_time
+0
+/sys/devices/mas-xm-qdss-dap/power/runtime_status
+unsupported
+/sys/devices/mas-xm-qdss-dap/power/runtime_suspended_time
+0
+/sys/devices/mas-xm-qdss-dap/uevent
+OF_NAME=mas-xm-qdss-dap
+OF_FULLNAME=/soc/ad-hoc-bus/mas-xm-qdss-dap
+OF_COMPATIBLE_N=0
+/sys/devices/mas-xm-qdss-etr/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-xm-qdss-etr/power/autosuspend_delay_ms
+/sys/devices/mas-xm-qdss-etr/power/control
+auto
+/sys/devices/mas-xm-qdss-etr/power/runtime_active_time
+0
+/sys/devices/mas-xm-qdss-etr/power/runtime_status
+unsupported
+/sys/devices/mas-xm-qdss-etr/power/runtime_suspended_time
+0
+/sys/devices/mas-xm-qdss-etr/uevent
+OF_NAME=mas-xm-qdss-etr
+OF_FULLNAME=/soc/ad-hoc-bus/mas-xm-qdss-etr
+OF_COMPATIBLE_N=0
+/sys/devices/mas-xm-sdc2/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-xm-sdc2/power/autosuspend_delay_ms
+/sys/devices/mas-xm-sdc2/power/control
+auto
+/sys/devices/mas-xm-sdc2/power/runtime_active_time
+0
+/sys/devices/mas-xm-sdc2/power/runtime_status
+unsupported
+/sys/devices/mas-xm-sdc2/power/runtime_suspended_time
+0
+/sys/devices/mas-xm-sdc2/uevent
+OF_NAME=mas-xm-sdc2
+OF_FULLNAME=/soc/ad-hoc-bus/mas-xm-sdc2
+OF_COMPATIBLE_N=0
+/sys/devices/mas-xm-sdc4/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-xm-sdc4/power/autosuspend_delay_ms
+/sys/devices/mas-xm-sdc4/power/control
+auto
+/sys/devices/mas-xm-sdc4/power/runtime_active_time
+0
+/sys/devices/mas-xm-sdc4/power/runtime_status
+unsupported
+/sys/devices/mas-xm-sdc4/power/runtime_suspended_time
+0
+/sys/devices/mas-xm-sdc4/uevent
+OF_NAME=mas-xm-sdc4
+OF_FULLNAME=/soc/ad-hoc-bus/mas-xm-sdc4
+OF_COMPATIBLE_N=0
+/sys/devices/mas-xm-ufs-mem/bw
+[0]:ufshc_mem:Act_IB 0 Act_AB 0 Slp_IB 0 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-xm-ufs-mem/power/autosuspend_delay_ms
+/sys/devices/mas-xm-ufs-mem/power/control
+auto
+/sys/devices/mas-xm-ufs-mem/power/runtime_active_time
+0
+/sys/devices/mas-xm-ufs-mem/power/runtime_status
+unsupported
+/sys/devices/mas-xm-ufs-mem/power/runtime_suspended_time
+0
+/sys/devices/mas-xm-ufs-mem/uevent
+OF_NAME=mas-xm-ufs-mem
+OF_FULLNAME=/soc/ad-hoc-bus/mas-xm-ufs-mem
+OF_COMPATIBLE_N=0
+/sys/devices/mas-xm-usb3-0/bw
+[0]:usb0:Act_IB 0 Act_AB 0 Slp_IB 2500000000 Slp_AB 1000000000
+[1]:usb0:Act_IB 0 Act_AB 0 Slp_IB 2400000 Slp_AB 0
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 2500000000 Sum_Slp_AB 1000000000 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-xm-usb3-0/power/autosuspend_delay_ms
+/sys/devices/mas-xm-usb3-0/power/control
+auto
+/sys/devices/mas-xm-usb3-0/power/runtime_active_time
+0
+/sys/devices/mas-xm-usb3-0/power/runtime_status
+unsupported
+/sys/devices/mas-xm-usb3-0/power/runtime_suspended_time
+0
+/sys/devices/mas-xm-usb3-0/uevent
+OF_NAME=mas-xm-usb3-0
+OF_FULLNAME=/soc/ad-hoc-bus/mas-xm-usb3-0
+OF_COMPATIBLE_N=0
+/sys/devices/mas-xm-usb3-1/bw
+Max_Act_IB 0 Sum_Act_AB 0 Act_Util_fact 0 Act_Vrail_comp 0
+Max_Slp_IB 0 Sum_Slp_AB 0 Slp_Util_fact 0 Slp_Vrail_comp 0
+/sys/devices/mas-xm-usb3-1/power/autosuspend_delay_ms
+/sys/devices/mas-xm-usb3-1/power/control
+auto
+/sys/devices/mas-xm-usb3-1/power/runtime_active_time
+0
+/sys/devices/mas-xm-usb3-1/power/runtime_status
+unsupported
+/sys/devices/mas-xm-usb3-1/power/runtime_suspended_time
+0
+/sys/devices/mas-xm-usb3-1/uevent
+OF_NAME=mas-xm-usb3-1
+OF_FULLNAME=/soc/ad-hoc-bus/mas-xm-usb3-1
+OF_COMPATIBLE_N=0
+/sys/devices/platform/alarmtimer/driver_override
+(null)
+/sys/devices/platform/alarmtimer/modalias
+platform:alarmtimer
+/sys/devices/platform/alarmtimer/power/autosuspend_delay_ms
+/sys/devices/platform/alarmtimer/power/control
+auto
+/sys/devices/platform/alarmtimer/power/runtime_active_time
+0
+/sys/devices/platform/alarmtimer/power/runtime_status
+unsupported
+/sys/devices/platform/alarmtimer/power/runtime_suspended_time
+0
+/sys/devices/platform/alarmtimer/uevent
+DRIVER=alarmtimer
+MODALIAS=platform:alarmtimer
+/sys/devices/platform/cam_sync/driver_override
+(null)
+/sys/devices/platform/cam_sync/media1/dev
+246:1
+/sys/devices/platform/cam_sync/media1/model
+cam_sync_device
+/sys/devices/platform/cam_sync/media1/power/autosuspend_delay_ms
+/sys/devices/platform/cam_sync/media1/power/control
+auto
+/sys/devices/platform/cam_sync/media1/power/runtime_active_time
+0
+/sys/devices/platform/cam_sync/media1/power/runtime_status
+unsupported
+/sys/devices/platform/cam_sync/media1/power/runtime_suspended_time
+0
+/sys/devices/platform/cam_sync/media1/uevent
+MAJOR=246
+MINOR=1
+DEVNAME=media1
+/sys/devices/platform/cam_sync/modalias
+platform:cam_sync
+/sys/devices/platform/cam_sync/power/autosuspend_delay_ms
+/sys/devices/platform/cam_sync/power/control
+auto
+/sys/devices/platform/cam_sync/power/runtime_active_time
+0
+/sys/devices/platform/cam_sync/power/runtime_status
+unsupported
+/sys/devices/platform/cam_sync/power/runtime_suspended_time
+0
+/sys/devices/platform/cam_sync/uevent
+DRIVER=cam_sync
+MODALIAS=platform:cam_sync
+/sys/devices/platform/cam_sync/video4linux/video1/dev
+81:1
+/sys/devices/platform/cam_sync/video4linux/video1/dev_debug
+0
+/sys/devices/platform/cam_sync/video4linux/video1/index
+0
+/sys/devices/platform/cam_sync/video4linux/video1/name
+cam_sync
+/sys/devices/platform/cam_sync/video4linux/video1/power/autosuspend_delay_ms
+/sys/devices/platform/cam_sync/video4linux/video1/power/control
+auto
+/sys/devices/platform/cam_sync/video4linux/video1/power/runtime_active_time
+0
+/sys/devices/platform/cam_sync/video4linux/video1/power/runtime_status
+unsupported
+/sys/devices/platform/cam_sync/video4linux/video1/power/runtime_suspended_time
+0
+/sys/devices/platform/cam_sync/video4linux/video1/uevent
+MAJOR=81
+MINOR=1
+DEVNAME=video1
+/sys/devices/platform/energy-costs/driver_override
+(null)
+/sys/devices/platform/energy-costs/modalias
+of:Nenergy-costsT<NULL>Csched-energy
+/sys/devices/platform/energy-costs/power/autosuspend_delay_ms
+/sys/devices/platform/energy-costs/power/control
+auto
+/sys/devices/platform/energy-costs/power/runtime_active_time
+0
+/sys/devices/platform/energy-costs/power/runtime_status
+unsupported
+/sys/devices/platform/energy-costs/power/runtime_suspended_time
+0
+/sys/devices/platform/energy-costs/uevent
+DRIVER=sched-energy
+OF_NAME=energy-costs
+OF_FULLNAME=/energy-costs
+OF_COMPATIBLE_0=sched-energy
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nenergy-costsT<NULL>Csched-energy
+/sys/devices/platform/goodix_ts.0/chip_info
+TouchDeviceName:GTx5 TouchDevcie
+/sys/devices/platform/goodix_ts.0/config_data
+/sys/devices/platform/goodix_ts.0/driver_info
+DriverVersion:v1.2.0.1
+/sys/devices/platform/goodix_ts.0/driver_override
+(null)
+/sys/devices/platform/goodix_ts.0/extmod_info
+priority:2 module:Goodix_gsx_gesture
+/sys/devices/platform/goodix_ts.0/fwupdate/force_update
+/sys/devices/platform/goodix_ts.0/fwupdate/fwimage
+/sys/devices/platform/goodix_ts.0/fwupdate/fwsize
+/sys/devices/platform/goodix_ts.0/fwupdate/fwversion
+/sys/devices/platform/goodix_ts.0/fwupdate/progress
+100
+/sys/devices/platform/goodix_ts.0/fwupdate/result
+failed
+/sys/devices/platform/goodix_ts.0/fwupdate/update_en
+/sys/devices/platform/goodix_ts.0/gesture/data
+Previous gesture type:0xff
+/sys/devices/platform/goodix_ts.0/gesture/enable
+1
+/sys/devices/platform/goodix_ts.0/gesture/type

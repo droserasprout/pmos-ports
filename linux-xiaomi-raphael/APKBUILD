@@ -29,8 +29,14 @@ makedepends="
 "
 
 # Source
-_repository="android_kernel_xiaomi_sm8150"
-_commit="6ceb32465a3b8fa65bc5d2e34b916aac7024c9b6"
+# 
+# _org="PixelExperience-Devices"
+# _repository="kernel_xiaomi_raphael"
+# _commit="ddb4ef010e177f4b33e54a0214da214a530fa2ef"
+
+# _org="xiaomi-sm8150-devs"
+# _repository="android_kernel_xiaomi_sm8150"
+# _commit="ddb4ef010e177f4b33e54a0214da214a530fa2ef"
 
 # _repository="android_kernel_xiaomi_sm8150-legacy"
 # _commit="343ff33bf560de8a6f2debdf1d3b23e27fd364e3"
@@ -38,11 +44,13 @@ _commit="6ceb32465a3b8fa65bc5d2e34b916aac7024c9b6"
 # _repository="sm8150-mainline"
 # _commit="4870a82ab62ee793d9332ebf9d5d83995a2f365e"
 
+_org="crdroidandroid"
+_repository="android_kernel_xiaomi_sm8150"
+_commit="13.0-raphael"
+
 _config="config-$_flavor.$arch"
-	# $pkgname-$_commit.tar.gz::https://github.com/xiaomi-sm8150-devs/$_repository/archive/$_commit.tar.gz
-	# $pkgname-$_commit.tar.gz::https://gitlab.com/sm8150-mainline/linux/-/archive/sm8150/5.17/linux-sm8150-5.17.tar.gz
 source="
-	$pkgname-$_commit.tar.gz::https://github.com/crdroidandroid/$_repository/archive/$_commit.tar.gz
+	$pkgname-$_commit.tar.gz::https://github.com/$_org/$_repository/archive/$_commit.tar.gz
 	$_config
 "
 builddir="$srcdir/$_repository-$_commit"
@@ -69,6 +77,6 @@ package() {
 }
 
 sha512sums="
-1c721806b748d6cb8714a2913c3b1988606f1d92ecb9b107ef63f806bddf629deca9dd78a5623273aae6713dd8a039cc7138dfeed6e474559885e04afae68d51  linux-xiaomi-raphael-6ceb32465a3b8fa65bc5d2e34b916aac7024c9b6.tar.gz
-19880ef027e89ff2536a2b1d8e747c4d7e6efec5c7141507400d4f323aa0ee10dfbc1d435b3d70b610bf443df347cc552b261c421cd99822a39efd101fc08da1  config-xiaomi-raphael.aarch64
+31371453b8654c43392779a1d58a02d9c095007871af752c775feb593eab906122c1f27dc27977eb5e65aaf38ffd9d8a8e982bf93f82ea623dcbcf0c76cef626  linux-xiaomi-raphael-13.0-raphael.tar.gz
+9bc23c0e47d5c6eaec130303a2b6223f57799bd3314dff97b3efb631eafee6b03b39fbf6ae979c6a00ed3a0eaa267af4433fd5deaa1f5588d16e20bae6777943  config-xiaomi-raphael.aarch64
 "

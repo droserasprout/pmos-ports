@@ -32,11 +32,11 @@ kconfig:
 	make pull
 
 build:
-	pmbootstrap build ${DEVICE}
+	pmbootstrap build ${DEVICE} --force
 	pmbootstrap build ${KERNEL} --force
 
 boot:
-	pmbootstrap flasher boot
+	pmbootstrap flasher --method fastboot boot
 
 sideload_octavia:
 	read
@@ -57,6 +57,21 @@ dump_running:
 dump_boot:
 	adb shell su -c cat /dev/block/by-name/boot > /tmp/${CODENAME}-boot.img
 	pmbootstrap bootimg_analyze /tmp/${CODENAME}-boot.img > from-${CODENAME}/deviceinfo
+
+dumpsys_recovery:
+	adb push dumpsys.sh /tmp/dumpsys.sh
+	adb shell sh /tmp/dumpsys.sh | tee from-${CODENAME}/dumpsys_recovery
+
+dumpsys_android:
+	adb push dumpsys.sh /sdcard/dumpsys.sh
+	adb shell 'su -c sh /data/media/dumpsys.sh' > from-${CODENAME}/dumpsys_android
+
+dumpsys_compare:
+	grep -A1 -h -r '/sys/devices/platform/goodix_ts.0/driver_info' .
+
+telnet:
+	telnet 172.16.42.1
+	# vi dumpsys.sh
 
 init:
 	pmbootstrap init
