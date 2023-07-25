@@ -23,4 +23,6 @@ package() {
 	devicepkg_package $startdir $pkgname
 }
 
-sha512sums="(run 'pmbootstrap checksum device-xiaomi-raphael' to fill)"
+sha512sums="
+413810ec9acb6315a01ed8b1b8170481f4e735f41826a2ba4570e2c3a568b439ef7a394c8ff191a7413bf31b52b3df1bfd12b729828d85e750a80a3fc2ef0e72  deviceinfo
+"

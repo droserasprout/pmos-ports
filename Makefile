@@ -35,7 +35,7 @@ build:
 	pmbootstrap -v build ${KERNEL} --force
 
 boot:
-	pmbootstrap -v flasher --method fastboot boot
+	pmbootstrap -v flasher boot
 
 sideload_octavia:
 	read
