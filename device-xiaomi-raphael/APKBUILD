@@ -1,6 +1,6 @@
 # Reference: <https://postmarketos.org/devicepkg>
 pkgname=device-xiaomi-raphael
-pkgdesc="Xiaomi 9T Pro"
+pkgdesc="Xiaomi Mi 9T Pro"
 pkgver=0.1
 pkgrel=0
 url="https://postmarketos.org"
@@ -23,6 +23,4 @@ package() {
 	devicepkg_package $startdir $pkgname
 }
 
-sha512sums="
-03199c2a1fac2e08a44b8564ed02fa9a7b7d5b50bfe4c35045e55f5254e9b93925373c56608f6b8d13f12c16f2b7bab4dfb036bc76b98247f7d6f12ad6eb4e21  deviceinfo
-"
+sha512sums="(run 'pmbootstrap checksum device-xiaomi-raphael' to fill)"

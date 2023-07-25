@@ -18,8 +18,7 @@ push:
 	rm -rf ${PMAPORTS}/${KERNEL}
 	cp -r ${DEVICE} ${PMAPORTS}
 	cp -r ${KERNEL} ${PMAPORTS}
-	pmbootstrap checksum ${DEVICE}
-	pmbootstrap checksum ${KERNEL}
+	make checksum
 
 pull:
 	rm -rf ${DEVICE}
@@ -28,15 +27,15 @@ pull:
 	cp -r ${PMAPORTS}/${KERNEL} .
 
 kconfig:
-	pmbootstrap kconfig edit
+	pmbootstrap -v kconfig edit
 	make pull
 
 build:
-	pmbootstrap build ${DEVICE} --force
-	pmbootstrap build ${KERNEL} --force
+	pmbootstrap -v build ${DEVICE} --force
+	pmbootstrap -v build ${KERNEL} --force
 
 boot:
-	pmbootstrap flasher --method fastboot boot
+	pmbootstrap -v flasher --method fastboot boot
 
 sideload_octavia:
 	read
@@ -56,7 +55,7 @@ dump_running:
 
 dump_boot:
 	adb shell su -c cat /dev/block/by-name/boot > /tmp/${CODENAME}-boot.img
-	pmbootstrap bootimg_analyze /tmp/${CODENAME}-boot.img > from-${CODENAME}/deviceinfo
+	pmbootstrap -v bootimg_analyze /tmp/${CODENAME}-boot.img > from-${CODENAME}/deviceinfo
 
 dumpsys_recovery:
 	adb push dumpsys.sh /tmp/dumpsys.sh
@@ -74,8 +73,11 @@ telnet:
 	# vi dumpsys.sh
 
 init:
-	pmbootstrap init
+	pmbootstrap -v init
 
 checksum:
-	pmbootstrap checksum ${DEVICE}
-	pmbootstrap checksum ${KERNEL}
+	pmbootstrap -v checksum ${DEVICE}
+	pmbootstrap -v checksum ${KERNEL}
+
+grep_ports:
+	grep -r "dtb=" ~/.cache/pmbootstrap/cache_git/pmaports/
