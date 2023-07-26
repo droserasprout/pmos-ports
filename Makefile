@@ -1,7 +1,7 @@
 ################################################################################
 
 PMAPORTS=~/.cache/pmbootstrap/cache_git/pmaports/device
-PM=pmbootstrap -v --details-to-stdout
+PM=pmbootstrap --details-to-stdout -v
 
 ################################################################################
 
@@ -10,7 +10,7 @@ OCTAVIOS_ZIP=${ZIP}/OctaviOS-v4.4-tucana-20230522-2003-VANILLA-Official.zip
 MAGISK_ZIP=${ZIP}/Magisk-v26.1.zip
 
 GREP_DUMPSYS=/sys/devices/platform/goodix_ts.0/driver_info
-GREP_PORTS=deviceinfo_modules_initfs=
+GREP_PORTS=deviceinfo_modules_initfs
 
 CODENAME=raphael
 DEVICE=device-xiaomi-raphael
@@ -27,10 +27,10 @@ KERNEL=linux-xiaomi-raphael
 ################################################################################
 
 push:
-	rm -rf ${PMAPORTS}/${DEVICE}
-	rm -rf ${PMAPORTS}/${KERNEL}
-	cp -r ${DEVICE} ${PMAPORTS}/testing/
-	cp -r ${KERNEL} ${PMAPORTS}/testing/
+	rm -rf ${PMAPORTS}/testing/${DEVICE}
+	rm -rf ${PMAPORTS}/testing/${KERNEL}
+	cp -r ${DEVICE} ${PMAPORTS}/testing
+	cp -r ${KERNEL} ${PMAPORTS}/testing
 	make checksum
 
 pull:
@@ -43,9 +43,17 @@ kconfig:
 	${PM} kconfig edit
 	make pull
 
-build:
-	${PM} build ${DEVICE} --force
+build_kernel:
+	${PM} build ${KERNEL}
+
+build_kernel_force:
 	${PM} build ${KERNEL} --force
+
+build_device:
+	${PM} build ${DEVICE}
+
+build_device_force:
+	${PM} build ${DEVICE}  --force
 
 boot:
 	${PM} flasher boot
@@ -92,6 +100,8 @@ checksum:
 grep_ports:
 	grep -r ${GREP_PORTS} ${PMAPORTS}
 
+################################################################################
+
 install:
 	${PM} install
 
@@ -100,3 +110,10 @@ init:
 
 zap:
 	${PM} zap
+
+update:
+	${PM} update
+
+test_deviceinfo:
+	make push build_device_force
+	sudo env -i /usr/bin/sh -c "chroot /home/droserasprout/.cache/pmbootstrap/chroot_rootfs_xiaomi-raphael /bin/sh -c 'apk fix ${DEVICE}'"
