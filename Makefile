@@ -1,5 +1,16 @@
-PMAPORTS=~/.cache/pmbootstrap/cache_git/pmaports/device/testing/
-CACHE=~/.cache
+################################################################################
+
+PMAPORTS=~/.cache/pmbootstrap/cache_git/pmaports/device
+PM=pmbootstrap -v --details-to-stdout
+
+################################################################################
+
+ZIP=~/.cache
+OCTAVIOS_ZIP=${ZIP}/OctaviOS-v4.4-tucana-20230522-2003-VANILLA-Official.zip
+MAGISK_ZIP=${ZIP}/Magisk-v26.1.zip
+
+GREP_DUMPSYS=/sys/devices/platform/goodix_ts.0/driver_info
+GREP_PORTS=deviceinfo_modules_initfs=
 
 CODENAME=raphael
 DEVICE=device-xiaomi-raphael
@@ -13,39 +24,41 @@ KERNEL=linux-xiaomi-raphael
 # DEVICE=device-xiaomi-tucana
 # KERNEL=linux-xiaomi-tucana-erikdrozina
 
+################################################################################
+
 push:
 	rm -rf ${PMAPORTS}/${DEVICE}
 	rm -rf ${PMAPORTS}/${KERNEL}
-	cp -r ${DEVICE} ${PMAPORTS}
-	cp -r ${KERNEL} ${PMAPORTS}
+	cp -r ${DEVICE} ${PMAPORTS}/testing/
+	cp -r ${KERNEL} ${PMAPORTS}/testing/
 	make checksum
 
 pull:
 	rm -rf ${DEVICE}
 	rm -rf ${KERNEL}
-	cp -r ${PMAPORTS}/${DEVICE} .
-	cp -r ${PMAPORTS}/${KERNEL} .
+	cp -r ${PMAPORTS}/testing/${DEVICE} .
+	cp -r ${PMAPORTS}/testing/${KERNEL} .
 
 kconfig:
-	pmbootstrap -v kconfig edit
+	${PM} kconfig edit
 	make pull
 
 build:
-	pmbootstrap -v build ${DEVICE} --force
-	pmbootstrap -v build ${KERNEL} --force
+	${PM} build ${DEVICE} --force
+	${PM} build ${KERNEL} --force
 
 boot:
-	pmbootstrap -v flasher boot
+	${PM} flasher boot
 
 sideload_octavia:
 	read
 	adb reboot recovery
 	read
-	adb sideload ${CACHE}/OctaviOS-v4.4-tucana-20230522-2003-VANILLA-Official.zip
+	adb sideload ${OCTAVIOS_ZIP}
 	read
 	adb reboot recovery
 	read
-	adb sideload ${CACHE}/Magisk-v26.1.zip
+	adb sideload ${MAGISK_ZIP}
 	read
 	adb reboot
 
@@ -55,7 +68,7 @@ dump_running:
 
 dump_boot:
 	adb shell su -c cat /dev/block/by-name/boot > /tmp/${CODENAME}-boot.img
-	pmbootstrap -v bootimg_analyze /tmp/${CODENAME}-boot.img > from-${CODENAME}/deviceinfo
+	${PM} bootimg_analyze /tmp/${CODENAME}-boot.img > from-${CODENAME}/deviceinfo
 
 dumpsys_recovery:
 	adb push dumpsys.sh /tmp/dumpsys.sh
@@ -66,18 +79,24 @@ dumpsys_android:
 	adb shell 'su -c sh /data/media/dumpsys.sh' > from-${CODENAME}/dumpsys_android
 
 dumpsys_compare:
-	grep -A1 -h -r '/sys/devices/platform/goodix_ts.0/driver_info' .
+	grep -A1 -h -r "${DUMPSYS}" .
 
 telnet:
 	telnet 172.16.42.1
 	# vi dumpsys.sh
 
-init:
-	pmbootstrap -v init
-
 checksum:
-	pmbootstrap -v checksum ${DEVICE}
-	pmbootstrap -v checksum ${KERNEL}
+	${PM} checksum ${DEVICE}
+	${PM} checksum ${KERNEL}
 
 grep_ports:
-	grep -r "dtb=" ~/.cache/pmbootstrap/cache_git/pmaports/
+	grep -r ${GREP_PORTS} ${PMAPORTS}
+
+install:
+	${PM} install
+
+init:
+	${PM} init
+
+zap:
+	${PM} zap

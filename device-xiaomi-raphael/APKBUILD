@@ -1,6 +1,6 @@
 # Reference: <https://postmarketos.org/devicepkg>
 pkgname=device-xiaomi-raphael
-pkgdesc="Xiaomi Mi 9T Pro"
+pkgdesc="Xiaomi 9T Pro"
 pkgver=0.1
 pkgrel=0
 url="https://postmarketos.org"
@@ -24,5 +24,5 @@ package() {
 }
 
 sha512sums="
-413810ec9acb6315a01ed8b1b8170481f4e735f41826a2ba4570e2c3a568b439ef7a394c8ff191a7413bf31b52b3df1bfd12b729828d85e750a80a3fc2ef0e72  deviceinfo
+d9928a430a2fcf2616cf12a091497cb328f5ffdfb1b311424d2ec8b8cad15ee124f219b3c1428bef11c2d67e70c9129f4efbaefedd2f30c3441feb23ede0e303  deviceinfo
 "
