@@ -1,3 +1,4 @@
+# https://github.com/crdroidandroid/android_kernel_xiaomi_sm8150/blob/13.0-raphael/arch/arm64/configs/raphael_defconfig
 CONFIG_LOCALVERSION="-Bool-X-🇮🇩"
 # CONFIG_LOCALVERSION_AUTO is not set
 # CONFIG_FHANDLE is not set

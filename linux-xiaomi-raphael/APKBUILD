@@ -46,7 +46,7 @@ makedepends="
 
 _org="crdroidandroid"
 _repository="android_kernel_xiaomi_sm8150"
-_commit="6ceb32465a3b8fa65bc5d2e34b916aac7024c9b6"
+_commit="c4bf3c16786ae0901d540a4011f4fdc1c1239a79"
 
 _config="config-$_flavor.$arch"
 source="
@@ -77,6 +77,6 @@ package() {
 }
 
 sha512sums="
-1c721806b748d6cb8714a2913c3b1988606f1d92ecb9b107ef63f806bddf629deca9dd78a5623273aae6713dd8a039cc7138dfeed6e474559885e04afae68d51  linux-xiaomi-raphael-6ceb32465a3b8fa65bc5d2e34b916aac7024c9b6.tar.gz
+899100f14f8c2412d0125a6c9f0f76052965acbe8abe0f40a8727f3cd9b56c1b7fa8aacef1492e4e35e83692ce3b41b82014b1858e09387e513414921ede1529  linux-xiaomi-raphael-c4bf3c16786ae0901d540a4011f4fdc1c1239a79.tar.gz
 9772cb9f13469ab2165ab7360a1c1145eb8511400200eb054eba460a176f4eb4893e8af7bac3bedd4b40b949ee7ac8a088ab306a30dafabfd5194e7138d62d2e  config-xiaomi-raphael.aarch64
 "

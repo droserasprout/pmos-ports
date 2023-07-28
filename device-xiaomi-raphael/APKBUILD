@@ -13,16 +13,19 @@ depends="
 	postmarketos-base
 "
 makedepends="devicepkg-dev"
-source="deviceinfo"
+source="
+	deviceinfo
+"
 
 build() {
 	devicepkg_build $startdir $pkgname
 }
 
 package() {
+	# cp -r $startdir/*.dtb $pkgdir/boot/dtbs/
 	devicepkg_package $startdir $pkgname
 }
 
 sha512sums="
-bbb7ef9ed2a31cfd8b7dcacee722b850e1aec6f71d7ee456b5576e27957b172512c69b3202322b143bf29b6be1e17286358183778d90fa69cc9f7c173d79b8b2  deviceinfo
+955a55cf6dafe9ca9ef7df00ca713407d80b29911e37371bcf819e3b7c187e790d4bfbf4357c6ef45a92621cf922cf4c4dfe82e92e75c4074effe799a1625bbb  deviceinfo
 "
