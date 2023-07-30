@@ -12,9 +12,9 @@ MAGISK_ZIP=${ZIP}/Magisk-v26.1.zip
 GREP_DUMPSYS=/sys/devices/platform/goodix_ts.0/driver_info
 GREP_PORTS=deviceinfo_modules_initfs
 
-CODENAME=raphael
-DEVICE=device-xiaomi-raphael
-KERNEL=linux-xiaomi-raphael
+# CODENAME=raphael
+# DEVICE=device-xiaomi-raphael
+# KERNEL=linux-xiaomi-raphael
 
 # CODENAME=tucana
 # DEVICE=device-xiaomi-tucana
@@ -23,6 +23,10 @@ KERNEL=linux-xiaomi-raphael
 # CODENAME=tucana
 # DEVICE=device-xiaomi-tucana
 # KERNEL=linux-xiaomi-tucana-erikdrozina
+
+CODENAME=gemini
+DEVICE=device-xiaomi-gemini
+KERNEL=linux-postmarketos-qcom-msm8996
 
 ################################################################################
 

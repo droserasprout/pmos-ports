@@ -1,6 +1,10 @@
-# PostmarketOS on Xiaomi Note 10 Pro (WIP)
+# PostmarketOS ports (WIP)
 
-This repo is an attempt to port pmOS to Xiaomi Note 10 Pro, codename `tucana`. Not to be confused with Redmi Note 10 Pro, `sweet`. Almost identical names, and similar looks, but different guts.
+This repo is an attempt to port pmOS to multiple Xiaomi smartphones I have.
+
+First, Xiaomi Note 10 Pro, codename `tucana`. Not to be confused with Redmi Note 10 Pro, `sweet`. Almost identical names, and similar looks, but different guts. Curently doesn't boot. I'm also trying to port pmOS to `raphael` with more success - kernel loads, but screen is black. Finally, I have a `gemini`, and community port works AWESOME on it. Maybe one day I'll manage to fix missing features.
+
+See the Makefile to learn how to build and debug that stuff.
 
 ## Status
 
