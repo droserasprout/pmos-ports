@@ -2,7 +2,7 @@
 # Kernel config based on: arch/arm64/configs/raphael_defconfig
 
 pkgname=linux-xiaomi-raphael
-pkgver=4.14.320
+pkgver=4.14.325
 pkgrel=0
 pkgdesc="Xiaomi 9T Pro kernel fork"
 arch="aarch64"
@@ -46,7 +46,7 @@ makedepends="
 
 _org="crdroidandroid"
 _repository="android_kernel_xiaomi_sm8150"
-_commit="c4bf3c16786ae0901d540a4011f4fdc1c1239a79"
+_commit="c93fa8658e343de9d95fe0f09080fda12638157b"
 
 _config="config-$_flavor.$arch"
 source="
@@ -77,6 +77,6 @@ package() {
 }
 
 sha512sums="
-899100f14f8c2412d0125a6c9f0f76052965acbe8abe0f40a8727f3cd9b56c1b7fa8aacef1492e4e35e83692ce3b41b82014b1858e09387e513414921ede1529  linux-xiaomi-raphael-c4bf3c16786ae0901d540a4011f4fdc1c1239a79.tar.gz
-9772cb9f13469ab2165ab7360a1c1145eb8511400200eb054eba460a176f4eb4893e8af7bac3bedd4b40b949ee7ac8a088ab306a30dafabfd5194e7138d62d2e  config-xiaomi-raphael.aarch64
+697ee4e025e4cf2792a5ed8512a517fe73cf62027e645c774a2cfd35df3714edae003d1f3c1615cf9ace800d14498efebf8cf9271ed57946df0999e28970d7ff  linux-xiaomi-raphael-c93fa8658e343de9d95fe0f09080fda12638157b.tar.gz
+f7b3f1ada7dcc2882a90f5534ba52fdf2c31b42ceed0ecb88d0cfe9082513c2bbe9b38418ac0c6924b3fa0e77b827f50631d654d5911c88024c1a89909e51ac6  config-xiaomi-raphael.aarch64
 "
