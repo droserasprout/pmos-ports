@@ -3,12 +3,11 @@
 # scripts.
 
 deviceinfo_format_version="0"
-deviceinfo_name="Xiaomi Note 10 Pro"
+deviceinfo_name="Xiaomi Mi Note 10 Pro"
 deviceinfo_manufacturer="Xiaomi"
 deviceinfo_codename="xiaomi-tucana"
 deviceinfo_year="2019"
-deviceinfo_dtb=""
-deviceinfo_modules_initfs=""
+deviceinfo_dtb="sm7150-xiaomi-tucana"
 deviceinfo_arch="aarch64"
 
 # Device related
@@ -18,6 +17,7 @@ deviceinfo_external_storage="false"
 deviceinfo_screen_width="1080"
 deviceinfo_screen_height="2340"
 deviceinfo_getty="ttyMSM0;115200n8"
+deviceinfo_gpu_accelerated="true"
 
 # Bootloader related
 deviceinfo_kernel_cmdline="console=null androidboot.hardware=qcom androidboot.usbcontroller=a600000.dwc3 service_locator.enable=1 lpm_levels.sleep_disabled=1 loop.max_part=7 androidboot.init_fatal_reboot_target=recovery kpti=off swiotlb=1 cgroup_disable=pressure buildvariant=userdebug"
@@ -26,8 +26,8 @@ deviceinfo_bootimg_qcdt="false"
 deviceinfo_bootimg_mtk_mkimage="false"
 deviceinfo_bootimg_dtb_second="false"
 deviceinfo_flash_pagesize="4096"
-deviceinfo_header_version="2"
-deviceinfo_append_dtb="false"
+deviceinfo_header_version="1"
+deviceinfo_append_dtb="true"
 deviceinfo_flash_offset_dtb="0x01f00000"
 deviceinfo_flash_offset_base="0x00000000"
 deviceinfo_flash_offset_kernel="0x00008000"

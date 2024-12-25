@@ -1,6 +1,6 @@
 # Reference: <https://postmarketos.org/devicepkg>
 pkgname=device-xiaomi-tucana
-pkgdesc="Xiaomi Note 10 Pro"
+pkgdesc="Xiaomi Mi Note 10 Pro"
 pkgver=0.1
 pkgrel=0
 url="https://postmarketos.org"
@@ -8,12 +8,15 @@ license="MIT"
 arch="aarch64"
 options="!check !archcheck"
 depends="
-	linux-xiaomi-tucana-erikdrozina
+	linux-postmarketos-qcom-sm7150
 	mkbootimg
 	postmarketos-base
 "
 makedepends="devicepkg-dev"
-source="deviceinfo"
+source="
+	deviceinfo
+	modules-initfs
+"
 
 build() {
 	devicepkg_build $startdir $pkgname
@@ -23,6 +26,4 @@ package() {
 	devicepkg_package $startdir $pkgname
 }
 
-sha512sums="
-e19e47109a27d2d338b8d864b5108f31cf65c7991ea86d52e4469e7243f41968417b71833938e55d28cc87bb6e8ec24f6dfcd38225164adc58e2c35a3d0b535b  deviceinfo
-"
+sha512sums="(run 'pmbootstrap checksum device-xiaomi-tucana' to fill)"

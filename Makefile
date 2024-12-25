@@ -10,19 +10,15 @@ OCTAVIOS_ZIP=${ZIP}/OctaviOS-v4.4-tucana-20230522-2003-VANILLA-Official.zip
 MAGISK_ZIP=${ZIP}/Magisk-v26.1.zip
 
 GREP_DUMPSYS=/sys/devices/platform/goodix_ts.0/driver_info
-GREP_PORTS=deviceinfo_modules_initfs
+GREP_PORTS="dtc "
 
-CODENAME=raphael
-DEVICE=device-xiaomi-raphael
-KERNEL=linux-xiaomi-raphael
+# CODENAME=raphael
+# DEVICE=device-xiaomi-raphael
+# KERNEL=linux-xiaomi-raphael
 
-# CODENAME=tucana
-# DEVICE=device-xiaomi-tucana
-# KERNEL=linux-xiaomi-tucana-octavios
-
-# CODENAME=tucana
-# DEVICE=device-xiaomi-tucana
-# KERNEL=linux-xiaomi-tucana-erikdrozina
+CODENAME=tucana
+DEVICE=device-xiaomi-tucana
+KERNEL=linux-postmarketos-qcom-sm7150
 
 # CODENAME=gemini
 # DEVICE=device-xiaomi-gemini
@@ -32,16 +28,16 @@ KERNEL=linux-xiaomi-raphael
 
 push:
 	rm -rf ${PMAPORTS}/testing/${DEVICE}
-	rm -rf ${PMAPORTS}/testing/${KERNEL}
+	# rm -rf ${PMAPORTS}/testing/${KERNEL}
 	cp -r ${DEVICE} ${PMAPORTS}/testing
-	cp -r ${KERNEL} ${PMAPORTS}/testing
+	# cp -r ${KERNEL} ${PMAPORTS}/testing
 	make checksum
 
 pull:
 	rm -rf ${DEVICE}
-	rm -rf ${KERNEL}
+	# rm -rf ${KERNEL}
 	cp -r ${PMAPORTS}/testing/${DEVICE} .
-	cp -r ${PMAPORTS}/testing/${KERNEL} .
+	# cp -r ${PMAPORTS}/testing/${KERNEL} .
 
 kconfig:
 	${PM} kconfig edit
@@ -120,4 +116,4 @@ update:
 
 test_deviceinfo:
 	make push build_device_force
-	sudo env -i /usr/bin/sh -c "chroot /home/droserasprout/.cache/pmbootstrap/chroot_rootfs_xiaomi-raphael /bin/sh -c 'apk fix ${DEVICE}'"
+	sudo env -i /usr/bin/sh -c "chroot /home/droserasprout/.cache/pmbootstrap/chroot_rootfs_xiaomi-tucana /bin/sh -c 'apk fix ${DEVICE}'"
