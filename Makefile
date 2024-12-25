@@ -24,6 +24,11 @@ KERNEL=linux-postmarketos-qcom-sm7150
 # DEVICE=device-xiaomi-gemini
 # KERNEL=linux-postmarketos-qcom-msm8996
 
+# no trailing slash!
+BACKUP_PATH=~/pmos_backup
+
+PMOS_HOST=chill.lan
+
 ################################################################################
 
 push:
@@ -117,3 +122,19 @@ update:
 test_deviceinfo:
 	make push build_device_force
 	sudo env -i /usr/bin/sh -c "chroot /home/droserasprout/.cache/pmbootstrap/chroot_rootfs_xiaomi-tucana /bin/sh -c 'apk fix ${DEVICE}'"
+
+################################################################################
+
+pmos_backup:
+	mkdir -p ${BACKUP_PATH}
+
+	ssh user@${PMOS_HOST} "apk info | tee apk_info"
+	scp user@${PMOS_HOST}:apk_info ${BACKUP_PATH}/apk_info
+
+	ssh -tt user@${PMOS_HOST} "doas sh -c 'apk add rsync && service waydroid-container stop'"
+	rsync -avz --exclude=.cache --exclude=.cargo user@${PMOS_HOST}:/home/user/ ${BACKUP_PATH}/
+
+
+pmos_restore:
+	scp ${BACKUP_PATH}/apk_info user@${PMOS_HOST}:apk_info
+	ssh -tt user@${PMOS_HOST} "cat apk_info | xargs doas apk add"
