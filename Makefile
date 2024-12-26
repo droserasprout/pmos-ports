@@ -165,17 +165,15 @@ pmos_restore_home:
 	rsync -avz --exclude=.cache --exclude=.cargo ${BACKUP_PATH}/ ${PMOS_USER}@${PMOS_HOST}:/home/${PMOS_USER}/
 
 pmos_backup_waydroid:
-	${PMOS_SSHT} "doas sh -c 'service waydroid-container stop'"
-	
-	${PMOS_SSHT} "cd /home/${PMOS_USER}/.local/share/waydroid/data && doas sh -c 'tar cf - * | pv | zstd > waydroid_data.tar.zst'"
+	${PMOS_SSHT} "make backup_waydroid"
+
 	scp ${PMOS_USER}@${PMOS_HOST}:waydroid_data.tar.zst ${BACKUP_PATH}/waydroid_data.tar.zst
 
-	${PMOS_SSHT} "doas sh -c 'rm waydroid_data.tar.zst && service waydroid-container start'"
+	${PMOS_SSHT} "make waydroid_up"
 
 pmos_restore_waydroid:
 	scp ${BACKUP_PATH}/waydroid_data.tar.zst ${PMOS_USER}@${PMOS_HOST}:waydroid_data.tar.zst
-	${PMOS_SSHT} "doas sh -c 'service waydroid-container stop && mkdir -p /home/${PMOS_USER}/.local/share/waydroid/data'"
-	${PMOS_SSHT} "doas sh -c 'zstd -d -c waydroid_data.tar.zst | tar xf - -C /home/${PMOS_USER}/.local/share/waydroid/data'"
-	${PMOS_SSHT} "doas sh -c 'service waydroid-container start'"
+
+	${PMOS_SSHT} "make restore_waydroid"
 
 ##

@@ -10,3 +10,25 @@ help:               ## Show this help (default)
 
 setup:              ## Prepare pmOS device for running scripts
 	doas apk add rsync pv zstd coreutils findutils make
+
+up:                 ## Update apk packages
+	doas apk upgrade -a
+
+backup_waydroid: ##
+	cd ~/.local/share/waydroid/data && doas sh -c 'tar cf - * | pv | zstd > waydroid_data.tar.zst'
+
+restore_waydroid: ##
+	make waydroid_down
+	mkdir -p ~/.local/share/waydroid/data
+	doas sh -c 'zstd -d -c waydroid_data.tar.zst | tar xf - -C ~/.local/share/waydroid/data'
+	make waydroid_up
+
+##
+
+waydroid_up: ##
+	doas service waydroid-container start
+
+waydroid_down: ##
+	doas service waydroid-container stop
+
+##
