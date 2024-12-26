@@ -1,7 +1,7 @@
 .PHONY: $(MAKECMDGOALS)
 MAKEFLAGS += --no-print-directory
 ##
-##  🚧 pmOS device scripts
+##  🚧 pmOS scripts (device)
 ##
 ##
 
@@ -14,10 +14,12 @@ setup:              ## Prepare pmOS device for running scripts
 up:                 ## Update apk packages
 	doas apk upgrade -a
 
-backup_waydroid: ##
+backup_waydroid:    ##
+	make waydroid_down
 	cd ~/.local/share/waydroid/data && doas sh -c 'tar cf - * | pv | zstd > waydroid_data.tar.zst'
+	make waydroid_up
 
-restore_waydroid: ##
+restore_waydroid:   ##
 	make waydroid_down
 	mkdir -p ~/.local/share/waydroid/data
 	doas sh -c 'zstd -d -c waydroid_data.tar.zst | tar xf - -C ~/.local/share/waydroid/data'
@@ -25,10 +27,10 @@ restore_waydroid: ##
 
 ##
 
-waydroid_up: ##
+waydroid_up:        ##
 	doas service waydroid-container start
 
-waydroid_down: ##
+waydroid_down:      ##
 	doas service waydroid-container stop
 
 ##
