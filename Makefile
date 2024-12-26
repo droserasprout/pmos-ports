@@ -31,6 +31,9 @@ BACKUP_PATH=~/pmos_backup
 PMOS_HOST=chill.lan
 PMOS_USER=droserasprout
 
+PMOS_SSH=ssh ${PMOS_USER}@${PMOS_HOST}
+PMOS_SSHT=ssh -tt ${PMOS_USER}@${PMOS_HOST}
+
 ##
 
 help:               ## Show this help (default)
@@ -132,26 +135,28 @@ test_deviceinfo:
 
 ##
 
+pmos_setup:         ## Prepare pmOS device for running scripts
+	mkdir -p ${BACKUP_PATH}
+	scp Makefile.pmos ${PMOS_USER}@${PMOS_HOST}:Makefile
+	${PMOS_SSHT} "make setup"
+
 pmos_backup:        ## Backup pmOS device
-	make pmos_backup_setup
 	make pmos_backup_apk
 	make pmos_backup_home
 	make pmos_backup_waydroid
 
 pmos_restore:       ## Restore pmOS device
 	make pmos_restore_apk
-
-pmos_backup_setup:
-	mkdir -p ${BACKUP_PATH}
-	ssh -tt ${PMOS_USER}@${PMOS_HOST} "doas sh -c 'apk add rsync pv zstd coreutils findutils'"
+	make pmos_restore_home
+	make pmos_restore_waydroid
 
 pmos_backup_apk:
-	ssh ${PMOS_USER}@${PMOS_HOST} "apk info | tee apk_info"
+	${PMOS_SSH} "apk info | tee apk_info"
 	scp ${PMOS_USER}@${PMOS_HOST}:apk_info ${BACKUP_PATH}/apk_info
 
 pmos_restore_apk:
 	scp ${BACKUP_PATH}/apk_info ${PMOS_USER}@${PMOS_HOST}:apk_info
-	ssh -tt ${PMOS_USER}@${PMOS_HOST} "cat apk_info | xargs doas apk add"
+	${PMOS_SSHT} "cat apk_info | xargs doas apk add"
 
 pmos_backup_home:
 	rsync -avz --exclude=.cache --exclude=.cargo ${PMOS_USER}@${PMOS_HOST}:/home/${PMOS_USER}/ ${BACKUP_PATH}/
@@ -160,17 +165,17 @@ pmos_restore_home:
 	rsync -avz --exclude=.cache --exclude=.cargo ${BACKUP_PATH}/ ${PMOS_USER}@${PMOS_HOST}:/home/${PMOS_USER}/
 
 pmos_backup_waydroid:
-	ssh -tt ${PMOS_USER}@${PMOS_HOST} "doas sh -c 'service waydroid-container stop'"
+	${PMOS_SSHT} "doas sh -c 'service waydroid-container stop'"
 	
-	ssh -tt ${PMOS_USER}@${PMOS_HOST} "cd /home/${PMOS_USER}/.local/share/waydroid/data && doas sh -c 'tar cf - * | pv | zstd > waydroid_data.tar.zst'"
+	${PMOS_SSHT} "cd /home/${PMOS_USER}/.local/share/waydroid/data && doas sh -c 'tar cf - * | pv | zstd > waydroid_data.tar.zst'"
 	scp ${PMOS_USER}@${PMOS_HOST}:waydroid_data.tar.zst ${BACKUP_PATH}/waydroid_data.tar.zst
 
-	ssh -tt ${PMOS_USER}@${PMOS_HOST} "doas sh -c 'rm waydroid_data.tar.zst && service waydroid-container start'"
+	${PMOS_SSHT} "doas sh -c 'rm waydroid_data.tar.zst && service waydroid-container start'"
 
 pmos_restore_waydroid:
-	# scp ${BACKUP_PATH}/waydroid_data.tar.zst ${PMOS_USER}@${PMOS_HOST}:waydroid_data.tar.zst
-	ssh -tt ${PMOS_USER}@${PMOS_HOST} "doas sh -c 'service waydroid-container stop && mkdir -p /home/${PMOS_USER}/.local/share/waydroid/data'"
-	ssh -tt ${PMOS_USER}@${PMOS_HOST} "doas sh -c 'zstd -d -c waydroid_data.tar.zst | tar xf - -C /home/${PMOS_USER}/.local/share/waydroid/data'"
-	ssh -tt ${PMOS_USER}@${PMOS_HOST} "doas sh -c 'service waydroid-container start'"
+	scp ${BACKUP_PATH}/waydroid_data.tar.zst ${PMOS_USER}@${PMOS_HOST}:waydroid_data.tar.zst
+	${PMOS_SSHT} "doas sh -c 'service waydroid-container stop && mkdir -p /home/${PMOS_USER}/.local/share/waydroid/data'"
+	${PMOS_SSHT} "doas sh -c 'zstd -d -c waydroid_data.tar.zst | tar xf - -C /home/${PMOS_USER}/.local/share/waydroid/data'"
+	${PMOS_SSHT} "doas sh -c 'service waydroid-container start'"
 
 ##

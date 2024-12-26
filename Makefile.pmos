@@ -1,0 +1,12 @@
+.PHONY: $(MAKECMDGOALS)
+MAKEFLAGS += --no-print-directory
+##
+##  🚧 pmOS device scripts
+##
+##
+
+help:               ## Show this help (default)
+	@grep -Fh "##" $(MAKEFILE_LIST) | grep -Fv grep -F | sed -e 's/\\$$//' | sed -e 's/##//'
+
+setup:              ## Prepare pmOS device for running scripts
+	doas apk add rsync pv zstd coreutils findutils make
