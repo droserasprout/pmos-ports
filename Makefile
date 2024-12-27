@@ -17,7 +17,7 @@ help:               ## Show this help (default)
 
 setup:              ## Prepare pmOS device for running scripts
 	mkdir -p ${BACKUP_PATH}
-	scp Makefile.pmos ${PMOS_USER}@${PMOS_HOST}:Makefile
+	scp Makefile.device ${PMOS_USER}@${PMOS_HOST}:Makefile
 	${PMOS_SSH} "make setup"
 
 ##
